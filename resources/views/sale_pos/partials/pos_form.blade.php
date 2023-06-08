@@ -100,7 +100,7 @@
 	<!-- @endif -->
 
 	<!-- @if(!empty($pos_settings['enable_transaction_date'])) -->
-	<div class="col-md-3 col-sm-6">
+		<div class="col-md-3 col-sm-6">
 			<div class="form-group">
 				<div class="input-group">
 					<label>Job No</lable>
@@ -111,7 +111,7 @@
 	<!-- @endif -->
 
 	<!-- @if(!empty($pos_settings['enable_transaction_date'])) -->
-	<div class="col-md-3 col-sm-6">
+		<div class="col-md-3 col-sm-6">
 			<div class="form-group">
 				<div class="input-group">
 					<label>Job Reference</lable>
