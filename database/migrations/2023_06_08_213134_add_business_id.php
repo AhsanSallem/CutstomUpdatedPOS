@@ -14,14 +14,19 @@ return new class extends Migration
     public function up()
     {
         Schema::table('catalogs', function (Blueprint $table) {
-            $table->string('catalog_type');
+            $table->integer('business_id');
         });
     }
 
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
     public function down()
     {
         Schema::table('catalogs', function (Blueprint $table) {
-            $table->dropColumn('catalog_type');
+            //
         });
     }
 };
