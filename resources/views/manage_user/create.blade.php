@@ -104,10 +104,10 @@
         </div>
       </div>
       <div class="clearfix"></div>
-      <div class="col-md-3">
+      <!-- <div class="col-md-3">
           <h4>@lang( 'role.access_locations' ) @show_tooltip(__('tooltip.access_locations_permission'))</h4>
-        </div>
-        <div class="col-md-9">
+        </div> -->
+        <!-- <div class="col-md-9">
           <div class="col-md-12">
             <div class="checkbox">
                 <label>
@@ -127,7 +127,7 @@
             </div>
           </div>
           @endforeach
-        </div>
+        </div> -->
     @endcomponent
   </div>
 

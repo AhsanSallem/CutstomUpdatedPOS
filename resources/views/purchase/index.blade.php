@@ -104,12 +104,12 @@
         purchase_table.ajax.reload();
     });
 
-    $(document).on('click', '.update_status', function(e){
-        e.preventDefault();
-        $('#update_purchase_status_form').find('#status').val($(this).data('status'));
-        $('#update_purchase_status_form').find('#purchase_id').val($(this).data('purchase_id'));
-        $('#update_purchase_status_modal').modal('show');
-    });
+    // $(document).on('click', '.update_status', function(e){
+    //     e.preventDefault();
+    //     $('#update_purchase_status_form').find('#status').val($(this).data('status'));
+    //     $('#update_purchase_status_form').find('#purchase_id').val($(this).data('purchase_id'));
+    //     $('#update_purchase_status_modal').modal('show');
+    // });
 
     $(document).on('submit', '#update_purchase_status_form', function(e){
         e.preventDefault();

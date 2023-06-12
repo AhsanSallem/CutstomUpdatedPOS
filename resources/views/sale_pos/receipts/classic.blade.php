@@ -82,6 +82,11 @@
 			<img style="width: 100%;margin-bottom: 10px;" src="{{$receipt_details->letter_head}}">
 		</div>
 	@endif
+
+
+
+
+
 	<div class="col-xs-12 text-center">
 		<!-- Invoice  number, Date  -->
 		<p style="width: 100% !important" class="word-wrap">
@@ -89,7 +94,23 @@
 				@if(!empty($receipt_details->invoice_no_prefix))
 					<b>{!! $receipt_details->invoice_no_prefix !!}</b>
 				@endif
+				
+				
 				{{$receipt_details->invoice_no}}
+
+				<br>
+				<strong>Order Point No: </strong> {{$receipt_details->ref_no}}
+				<br>
+				<strong>Job No: </strong> {{$receipt_details->job_no}}
+				<br>
+				<strong>Job Ref: </strong> {{$receipt_details->job_ref}}
+				<br>
+
+				<strong>Purchase Ref No: </strong> {{$receipt_details->pur_ref_no}}
+
+
+				
+
 
 				@if(!empty($receipt_details->types_of_service))
 					<br/>
@@ -242,6 +263,20 @@
 			</span>
 		</p>
 	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
 <div class="row" style="color: #000000 !important;">

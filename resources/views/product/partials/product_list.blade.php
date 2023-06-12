@@ -10,7 +10,7 @@
             <th>@lang('messages.action')</th>
             <th>@lang('product.sku')</th>
             <th>@lang('sale.product')</th>
-            <th>@lang('purchase.business_location') @show_tooltip(__('lang_v1.product_business_location_tooltip'))</th>
+            <!-- <th>@lang('purchase.business_location') @show_tooltip(__('lang_v1.product_business_location_tooltip'))</th> -->
             <div style="display: flex; width: 100%; margin-bottom: 10px; margin-left: 50% !important; ">
                 </div>
 

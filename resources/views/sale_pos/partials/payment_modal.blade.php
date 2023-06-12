@@ -13,6 +13,8 @@
 					</div>
 					<div class="col-md-9">
 						<div class="row">
+
+						
 							<div id="payment_rows_div">
 								@foreach($payment_lines as $payment_line)
 									
@@ -29,11 +31,19 @@
 							</div>
 							<input type="hidden" id="payment_row_index" value="{{count($payment_lines)}}">
 						</div>
-						<div class="row">
+
+
+
+
+
+
+
+						
+						<!-- <div class="row">
 							<div class="col-md-12">
 								<button type="button" class="btn btn-primary btn-block" id="add-payment-row">@lang('sale.add_payment_row')</button>
 							</div>
-						</div>
+						</div> -->
 						<br>
 						<div class="row @if($change_return['amount'] == 0) hide @endif payment_row" id="change_return_payment_data">
 							<div class="col-md-12">

@@ -31,6 +31,14 @@
 		</div>
 	</div>
 	@endif
+
+
+
+
+
+
+
+
 	<div class="{{$col_class}}">
 		<div class="form-group">
 			{!! Form::label("method_$row_index" , __('lang_v1.payment_method') . ':*') !!}
@@ -49,6 +57,15 @@
 			</div>
 		</div>
 	</div>
+
+
+
+
+
+
+
+
+	
 
 	@php
             $pos_settings = !empty(session()->get('business.pos_settings')) ? json_decode(session()->get('business.pos_settings'), true) : [];

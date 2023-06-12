@@ -177,7 +177,7 @@
 			<div class="col-sm-3">
 				<div class="form-group">
 					{!! Form::label('location_id', __('purchase.business_location').':*') !!}
-					@show_tooltip(__('tooltip.purchase_location'))
+					<!-- @show_tooltip(__('tooltip.purchase_location')) -->
 					{!! Form::select('location_id', $business_locations, $default_location, ['class' => 'form-control select2', 'placeholder' => __('messages.please_select'), 'required'], $bl_attributes); !!}
 				</div>
 			</div>
@@ -207,13 +207,13 @@
 		            <div class="multi-input">
 		              {!! Form::label('pay_term_number', __('contact.pay_term') . ':') !!} @show_tooltip(__('tooltip.pay_term'))
 		              <br/>
-		              {!! Form::number('pay_term_number', null, ['class' => 'form-control width-40 pull-left', 'placeholder' => __('contact.pay_term')]); !!}
+		              {!! Form::number('pay_term_number', 30, ['class' => 'form-control width-40 pull-left', 'placeholder' => __('contact.pay_term')]); !!}
 
 		              {!! Form::select('pay_term_type', 
-		              	['months' => __('lang_v1.months'), 
+		              	[
 		              		'days' => __('lang_v1.days')], 
 		              		null, 
-		              	['class' => 'form-control width-60 pull-left','placeholder' => __('messages.please_select'), 'id' => 'pay_term_type']); !!}
+		              	['class' => 'form-control width-60 pull-left', 'id' => 'pay_term_type']); !!}
 		            </div>
 		        </div>
 		    </div>

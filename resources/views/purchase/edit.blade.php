@@ -150,7 +150,7 @@
             <div class="col-sm-3">
               <div class="form-group">
                 {!! Form::label('location_id', __('purchase.business_location').':*') !!}
-                @show_tooltip(__('tooltip.purchase_location'))
+                <!-- @show_tooltip(__('tooltip.purchase_location')) -->
                 {!! Form::select('location_id', $business_locations, $purchase->location_id, ['class' => 'form-control select2', 'placeholder' => __('messages.please_select'), 'disabled']); !!}
               </div>
             </div>
@@ -183,10 +183,10 @@
                     {!! Form::number('pay_term_number', $purchase->pay_term_number, ['class' => 'form-control width-40 pull-left', 'placeholder' => __('contact.pay_term')]); !!}
 
                     {!! Form::select('pay_term_type', 
-                      ['months' => __('lang_v1.months'), 
+                      [
                         'days' => __('lang_v1.days')], 
                         $purchase->pay_term_type, 
-                      ['class' => 'form-control width-60 pull-left','placeholder' => __('messages.please_select'), 'id' => 'pay_term_type']); !!}
+                      ['class' => 'form-control width-60 pull-left', 'id' => 'pay_term_type']); !!}
                   </div>
               </div>
           </div>

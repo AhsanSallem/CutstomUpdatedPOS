@@ -95,7 +95,7 @@
 	      			</div>
 					
 	      			<div class="col-sm-4 invoice-col">
-	      				<b>@lang('product.expires_in'): </b>
+	      				<!-- <b>@lang('product.expires_in'): </b>
 	      				@php
 	  						$expiry_array = ['months'=>__('product.months'), 'days'=>__('product.days'), '' =>__('product.not_applicable') ];
 	  					@endphp
@@ -103,7 +103,7 @@
 							{{$product->expiry_period}} {{$expiry_array[$product->expiry_period_type]}}
 						@else
 							{{$expiry_array['']}}
-	      				@endif
+	      				@endif -->
 	      				<br>
 						@if($product->weight)
 							<b>@lang('lang_v1.weight'): </b>

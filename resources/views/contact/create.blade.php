@@ -336,9 +336,12 @@
                     <div class="multi-input">
                       {!! Form::label('pay_term_number', __('contact.pay_term') . ':') !!} @show_tooltip(__('tooltip.pay_term'))
                       <br/>
-                      {!! Form::number('pay_term_number', null, ['class' => 'form-control width-40 pull-left', 'placeholder' => __('contact.pay_term')]); !!}
 
-                      {!! Form::select('pay_term_type', ['months' => __('lang_v1.months'), 'days' => __('lang_v1.days')], '', ['class' => 'form-control width-60 pull-left','placeholder' => __('messages.please_select')]); !!}
+
+
+                      {!! Form::number('pay_term_number', 30, ['class' => 'form-control width-40 pull-left', 'placeholder' => __('contact.pay_term')]); !!}
+
+                      {!! Form::select('pay_term_type', [ 'days' => __('lang_v1.days')], '', ['class' => 'form-control width-60 pull-left']); !!}
                     </div>
                   </div>
                 </div>

@@ -117,7 +117,7 @@ return [
     'variation_name' => 'Variation Name',
     'add_variation_values' => 'Add variation values',
     'edit_variation' => 'Edit Variation',
-    'received' => 'Received',
+    'received' => 'Complete',
     'pending' => 'Pending',
     'ordered' => 'Ordered',
     'search_product_placeholder' => 'Enter Product name / SKU / Scan bar code',
