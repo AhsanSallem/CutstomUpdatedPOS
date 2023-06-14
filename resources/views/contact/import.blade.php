@@ -83,7 +83,11 @@
                         <td>@lang('business.first_name') <small class="text-muted">(@lang('lang_v1.required'))</small></td>
                         <td>&nbsp;</td>
                     </tr>
+<<<<<<< HEAD
                     <tr>
+=======
+                    <!-- <tr>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         <td>4</td>
                         <td>@lang('lang_v1.middle_name') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
                         <td>&nbsp;</td>
@@ -92,13 +96,20 @@
                         <td>5</td>
                         <td>@lang('business.last_name') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
                         <td>&nbsp;</td>
+<<<<<<< HEAD
                     </tr>
                     <tr>
                         <td>6</td>
+=======
+                    </tr> -->
+                    <tr>
+                        <td>4</td>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         <td>@lang('business.business_name') <br><small class="text-muted">(@lang('lang_v1.required_if_supplier'))</small></td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
+<<<<<<< HEAD
                         <td>7</td>
                         <td>@lang('lang_v1.contact_id') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
                         <td>@lang('lang_v1.contact_id_ins')</td>
@@ -115,65 +126,137 @@
                     </tr>
                     <tr>
                         <td>10</td>
+=======
+                        <td>5</td>
+                        <td>@lang('lang_v1.contact_id') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
+                        <td>@lang('lang_v1.contact_id_ins')</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>Order Point No <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
+                        <td>&nbsp;</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>7</td>
+                        <td>@lang('contact.tax_no') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
+                        <td>&nbsp;</td>
+                    </tr>
+
+                    <!-- <tr>
+                        <td>9</td>
+                        <td>@lang('lang_v1.opening_balance') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
+                        <td>&nbsp;</td>
+                    </tr> -->
+                    <tr>
+                        <td>8</td>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         <td>@lang('contact.pay_term') <br><small class="text-muted">(@lang('lang_v1.required_if_supplier'))</small></td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
+<<<<<<< HEAD
                         <td>11</td>
+=======
+                        <td>9</td>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         <td>@lang('contact.pay_term_period') <br><small class="text-muted">(@lang('lang_v1.required_if_supplier'))</small></td>
                         <td><strong>@lang('lang_v1.pay_term_period_ins')</strong></td>
                     </tr>
                     <tr>
+<<<<<<< HEAD
                         <td>12</td>
+=======
+                        <td>10</td>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         <td>@lang('lang_v1.credit_limit') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
+<<<<<<< HEAD
                         <td>13</td>
+=======
+                        <td>11</td>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         <td>@lang('business.email') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
+<<<<<<< HEAD
                         <td>14</td>
+=======
+                        <td>12</td>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         <td>@lang('contact.mobile') <small class="text-muted">(@lang('lang_v1.required'))</small></td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
+<<<<<<< HEAD
                         <td>15</td>
+=======
+                        <td>13</td>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         <td>@lang('contact.alternate_contact_number') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
+<<<<<<< HEAD
                         <td>16</td>
+=======
+                        <td>14</td>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         <td>@lang('contact.landline') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
+<<<<<<< HEAD
                         <td>17</td>
+=======
+                        <td>15</td>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         <td>@lang('business.city') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
+<<<<<<< HEAD
                         <td>18</td>
+=======
+                        <td>16</td>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         <td>@lang('business.state') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
+<<<<<<< HEAD
                         <td>19</td>
+=======
+                        <td>17</td>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         <td>@lang('business.country') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
+<<<<<<< HEAD
                         <td>20</td>
+=======
+                        <td>18</td>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         <td>@lang('lang_v1.address_line_1') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
+<<<<<<< HEAD
                         <td>21</td>
+=======
+                        <td>19</td>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         <td>@lang('lang_v1.address_line_2') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
+<<<<<<< HEAD
                         <td>22</td>
                         <td>@lang('business.zip_code') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
                         <td>&nbsp;</td>
@@ -184,6 +267,18 @@
                         <td>@lang('lang_v1.dob_ins') ({{\Carbon::now()->format('Y-m-d')}})</td>
                     </tr>
                     @php
+=======
+                        <td>20</td>
+                        <td>@lang('business.zip_code') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>23</td>
+                        <td>@lang('lang_v1.dob') <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
+                        <td>@lang('lang_v1.dob_ins') ({{\Carbon::now()->format('Y-m-d')}})</td>
+                    </tr> -->
+                    <!-- @php
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         $custom_labels = json_decode(session('business.custom_labels'), true);
                     @endphp
                     <tr>
@@ -205,7 +300,11 @@
                         <td>27</td>
                         <td>{{ $custom_labels['contact']['custom_field_4'] ?? __('lang_v1.contact_custom_field4') }} <small class="text-muted">(@lang('lang_v1.optional'))</small></td>
                         <td>&nbsp;</td>
+<<<<<<< HEAD
                     </tr>
+=======
+                    </tr> -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                 </table>
             @endcomponent
         </div>

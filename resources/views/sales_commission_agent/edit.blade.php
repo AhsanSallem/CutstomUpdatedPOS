@@ -44,7 +44,11 @@
       <div class="col-md-12">
         <div class="form-group">
           {!! Form::label('address', __( 'business.address' ) . ':') !!}
+<<<<<<< HEAD
             {!! Form::textarea('address', $user->address, ['class' => 'form-control', 'placeholder' => __( 'business.address'), 'rows' => 3 ]); !!}
+=======
+            {!! Form::text('address', $user->address, ['class' => 'form-control', 'placeholder' => __( 'business.address'), 'rows' => 3 ]); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
         </div>
       </div>
 

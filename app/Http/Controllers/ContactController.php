@@ -1158,6 +1158,7 @@ class ContactController extends Controller
                             break;
                         }
                     }
+<<<<<<< HEAD
 
                     //Mobile number
                     if (! empty(trim($value[13]))) {
@@ -1167,6 +1168,20 @@ class ContactController extends Controller
                         $error_msg = "Mobile number is required in row no. $row_no";
                         break;
                     }
+=======
+                    $contact_array['mobile'] = $value[13];
+
+                    // $contact_array['order_id'] = $value[27];
+
+                    //Mobile number
+                    // if (! empty(trim($value[13]))) {
+                    //     $contact_array['mobile'] = $value[13];
+                    // } else {
+                    //     $is_valid = false;
+                    //     $error_msg = "Mobile number is required in row no. $row_no";
+                    //     break;
+                    // }
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
                     //Alt contact number
                     $contact_array['alternate_number'] = $value[14];

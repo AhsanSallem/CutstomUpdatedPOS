@@ -21,6 +21,19 @@
       @endphp
       <div class="@if(!empty($export_custom_fields)) col-sm-3 @else col-sm-4 @endif">
         <b>@if($sell->type == 'sales_order') {{ __('restaurant.order_no') }} @else {{ __('sale.invoice_no') }} @endif:</b> #{{ $sell->invoice_no }}<br>
+<<<<<<< HEAD
+=======
+
+        
+        <b>@if($sell->type == 'sales_order') {{ __('restaurant.order_no') }} @else {{ __('Order Point No') }} @endif:</b> {{ $sell->ref_no }}<br>
+        <b>@if($sell->type == 'sales_order') {{ __('restaurant.order_no') }} @else {{ __('Job No') }} @endif:</b> {{ $sell->job_no }}<br>
+        <b>@if($sell->type == 'sales_order') {{ __('restaurant.order_no') }} @else {{ __('Job Ref') }} @endif:</b> {{ $sell->job_ref }}<br>
+        <b>@if($sell->type == 'sales_order') {{ __('restaurant.order_no') }} @else {{ __('Purchase Ref') }} @endif:</b> {{ $sell->pur_ref_no }}<br>
+
+
+
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
         <b>{{ __('sale.status') }}:</b> 
           @if($sell->status == 'draft' && $sell->is_quotation == 1)
             {{ __('lang_v1.quotation') }}
@@ -28,10 +41,20 @@
             {{ $statuses[$sell->status] ?? __('sale.' . $sell->status) }}
           @endif
         <br>
+<<<<<<< HEAD
+=======
+
+        
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
         @if($sell->type != 'sales_order')
           <b>{{ __('sale.payment_status') }}:</b> @if(!empty($sell->payment_status)){{ __('lang_v1.' . $sell->payment_status) }}
           @endif
         @endif
+<<<<<<< HEAD
+=======
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
         @if(!empty($custom_labels['sell']['custom_field_1']))
           <br><strong>{{$custom_labels['sell']['custom_field_1'] ?? ''}}: </strong> {{$sell->custom_field_1}}
         @endif

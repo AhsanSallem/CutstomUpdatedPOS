@@ -24,7 +24,11 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         {!! Form::label('description', __('lang_v1.description') . ':') !!}
+<<<<<<< HEAD
                         {!! Form::textarea('description', $document_note->description, ['class' => 'form-control ', 'id' => 'docs_note_description']); !!}
+=======
+                        {!! Form::text('description', $document_note->description, ['class' => 'form-control ', 'id' => 'docs_note_description']); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                     </div>
                 </div>
             </div>

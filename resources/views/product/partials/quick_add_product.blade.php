@@ -138,7 +138,11 @@
         <div class="col-sm-8">
           <div class="form-group">
             {!! Form::label('product_description', __('lang_v1.product_description') . ':') !!}
+<<<<<<< HEAD
               {!! Form::textarea('product_description', null, ['class' => 'form-control']); !!}
+=======
+              {!! Form::text('product_description', null, ['class' => 'form-control']); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
           </div>
         </div>
         <div class="clearfix"></div>

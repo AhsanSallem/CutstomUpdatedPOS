@@ -535,4 +535,37 @@ class ModuleUtil extends Util
 
         return $module_data;
     }
+<<<<<<< HEAD
+=======
+    public function getCatalogData($catalog_type)
+    {
+        $catalog_types = ['product'];
+
+        $modules_data = $this->getModuleData('addCatalogs');
+        $module_data = [];
+        foreach ($modules_data as $module => $data) {
+            foreach ($data  as $key => $value) {
+                //key is category type
+                //check if category type is duplicate
+                if (! in_array($key, $catalog_types)) {
+                    $catalog_types[] = $key;
+                } else {
+                    echo "Duplicate Catalog type found";
+                    exit;
+                }
+
+                if ($catalog_type == $key) {
+                    $module_data = $value;
+                }
+            }
+        }
+
+        if (! in_array($catalog_type, $catalog_types)) {
+            echo "Duplicate Catalog  type Not found";
+            exit;
+        }
+
+        return $module_data;
+    }
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 }

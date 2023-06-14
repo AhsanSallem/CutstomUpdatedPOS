@@ -31,6 +31,17 @@
 		</div>
 	</div>
 	@endif
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 	<div class="{{$col_class}}">
 		<div class="form-group">
 			{!! Form::label("method_$row_index" , __('lang_v1.payment_method') . ':*') !!}
@@ -50,6 +61,18 @@
 		</div>
 	</div>
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+	
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 	@php
             $pos_settings = !empty(session()->get('business.pos_settings')) ? json_decode(session()->get('business.pos_settings'), true) : [];
             $enable_cash_denomination_for_payment_methods = !empty($pos_settings['enable_cash_denomination_for_payment_methods']) ? $pos_settings['enable_cash_denomination_for_payment_methods'] : [];
@@ -137,7 +160,11 @@
 	<div class="col-md-12">
 		<div class="form-group">
 			{!! Form::label("note_$row_index", __('sale.payment_note') . ':') !!}
+<<<<<<< HEAD
 			{!! Form::textarea("payment[$row_index][note]", $payment_line['note'], ['class' => 'form-control', 'rows' => 3, 'id' => "note_$row_index"]); !!}
+=======
+			{!! Form::text("payment[$row_index][note]", $payment_line['note'], ['class' => 'form-control', 'rows' => 3, 'id' => "note_$row_index"]); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 		</div>
 	</div>
 </div>

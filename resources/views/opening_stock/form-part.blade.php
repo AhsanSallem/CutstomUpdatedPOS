@@ -34,7 +34,11 @@
 	@if(empty($purchases[$key][$variation->id]))
 		@php
 			$purchases[$key][$variation->id][] = ['quantity' => 0, 
+<<<<<<< HEAD
 			'purchase_price' => $variation->default_purchase_price,
+=======
+			'purchase_price' => $variation->dpp_inc_tax,
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 			'purchase_line_id' => null,
 			'lot_number' => null,
 			'transaction_date' => null,
@@ -107,7 +111,11 @@
 		</div>
 	</td>
 	<td>
+<<<<<<< HEAD
 		{!! Form::textarea('stocks[' . $key . '][' . $variation->id . '][' . $sub_key . '][purchase_line_note]', $purchase_line_note , ['class' => 'form-control input-sm', 'rows' => 3 ]); !!}
+=======
+		{!! Form::text('stocks[' . $key . '][' . $variation->id . '][' . $sub_key . '][purchase_line_note]', $purchase_line_note , ['class' => 'form-control input-sm', 'rows' => 3 ]); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 	</td>
 	<td>
 		@if($loop->index == 0)

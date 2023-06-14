@@ -131,8 +131,13 @@
         @endphp
         <div class="col-sm-4">
           <div class="form-group">
+<<<<<<< HEAD
             {!! Form::label('product_locations', __('business.business_locations') . ':') !!} @show_tooltip(__('lang_v1.product_location_help'))
               {!! Form::select('product_locations[]', $business_locations, $default_location, ['class' => 'form-control select2', 'multiple', 'id' => 'product_locations']); !!}
+=======
+            <input type="hidden" name="product_locations" value="{{$business_locations}}">
+              <!-- {!! Form::select('product_locations[]', $business_locations, $default_location, ['class' => 'form-control select2', 'multiple', 'id' => 'product_locations']); !!} -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
           </div>
         </div>
 
@@ -185,6 +190,7 @@
             <small><p class="help-block">@lang('purchase.max_file_size', ['size' => (config('constants.document_size_limit') / 1000000)]) <br> @lang('lang_v1.aspect_ratio_should_be_1_1')</p></small>
           </div>
         </div>
+<<<<<<< HEAD
         </div>
         <div class="col-sm-4">
           <div class="form-group">
@@ -198,6 +204,21 @@
             </small>
           </div>
         </div>
+=======
+        <!--</div>-->
+        <!--<div class="col-sm-4">-->
+        <!--  <div class="form-group">-->
+        <!--    {!! Form::label('product_brochure', __('lang_v1.product_brochure') . ':') !!}-->
+        <!--    {!! Form::file('product_brochure', ['id' => 'product_brochure', 'accept' => implode(',', array_keys(config('constants.document_upload_mimes_types')))]); !!}-->
+        <!--    <small>-->
+        <!--        <p class="help-block">-->
+        <!--            @lang('purchase.max_file_size', ['size' => (config('constants.document_size_limit') / 1000000)])-->
+        <!--            @includeIf('components.document_help_text')-->
+        <!--        </p>-->
+        <!--    </small>-->
+        <!--  </div>-->
+        <!--</div>-->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
     @endcomponent
 
 

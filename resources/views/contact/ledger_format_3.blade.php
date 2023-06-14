@@ -69,7 +69,11 @@
 				<th width="18%" class="text-center">@lang('lang_v1.date')</th>
 				<th width="9%" class="text-center">@lang('purchase.ref_no')</th>
 				<th width="8%" class="text-center">@lang('lang_v1.type')</th>
+<<<<<<< HEAD
 				<th width="10%" class="text-center">@lang('sale.location')</th>
+=======
+				<!-- <th width="10%" class="text-center">@lang('sale.location')</th> -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 				<th width="5%" class="text-center">@lang('sale.payment_status')</th>
 				{{--<th width="10%" class="text-center">@lang('sale.total')</th>--}}
 				<th width="10%" class="text-center">@lang('account.debit')</th>
@@ -88,7 +92,11 @@
 					<td class="row-border">{{@format_datetime($data['date'])}}</td>
 					<td>{{$data['ref_no']}}</td>
 					<td>{{$data['type']}}</td>
+<<<<<<< HEAD
 					<td>{{$data['location']}}</td>
+=======
+					<!-- <td>{{$data['location']}}</td> -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 					<td>{{$data['payment_status']}}</td>
 					{{--<td class="ws-nowrap align-right">@if($data['total'] !== '') @format_currency($data['total']) @endif</td>--}}
 					<td class="ws-nowrap align-right">@if($data['debit'] != '') @format_currency($data['debit']) @endif</td>

@@ -11,14 +11,22 @@
 					<div class="col-md-6">
 				        <div class="form-group">
 				            {!! Form::label('shipping_details_modal', __('sale.shipping_details') . ':*' ) !!}
+<<<<<<< HEAD
 				            {!! Form::textarea('shipping_details_modal', !empty($transaction->shipping_details) ? $transaction->shipping_details : '', ['class' => 'form-control','placeholder' => __('sale.shipping_details'), 'required' ,'rows' => '4']); !!}
+=======
+				            {!! Form::text('shipping_details_modal', !empty($transaction->shipping_details) ? $transaction->shipping_details : '', ['class' => 'form-control','placeholder' => __('sale.shipping_details'), 'required' ,'rows' => '4']); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 				        </div>
 				    </div>
 
 				    <div class="col-md-6">
 				        <div class="form-group">
 				            {!! Form::label('shipping_address_modal', __('lang_v1.shipping_address') . ':' ) !!}
+<<<<<<< HEAD
 				            {!! Form::textarea('shipping_address_modal',!empty($transaction->shipping_address) ? $transaction->shipping_address : '', ['class' => 'form-control','placeholder' => __('lang_v1.shipping_address') ,'rows' => '4']); !!}
+=======
+				            {!! Form::text('shipping_address_modal',!empty($transaction->shipping_address) ? $transaction->shipping_address : '', ['class' => 'form-control','placeholder' => __('lang_v1.shipping_address') ,'rows' => '4']); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 				        </div>
 				    </div>
 

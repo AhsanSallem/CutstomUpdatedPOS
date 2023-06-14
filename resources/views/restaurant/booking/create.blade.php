@@ -82,7 +82,11 @@
 					<div class="col-sm-12">
 						<div class="form-group">
 						{!! Form::label('booking_note', __( 'restaurant.customer_note' ) . ':') !!}
+<<<<<<< HEAD
 						{!! Form::textarea('booking_note', null, ['class' => 'form-control','placeholder' => __( 'restaurant.customer_note' ), 'rows' => 3 ]); !!}
+=======
+						{!! Form::text('booking_note', null, ['class' => 'form-control','placeholder' => __( 'restaurant.customer_note' ), 'rows' => 3 ]); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 						</div>
 					</div>
 					<div class="col-sm-12">

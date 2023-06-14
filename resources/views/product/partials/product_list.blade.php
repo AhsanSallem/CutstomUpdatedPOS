@@ -8,14 +8,31 @@
             <th><input type="checkbox" id="select-all-row" data-table-id="product_table"></th>
             <th>&nbsp;</th>
             <th>@lang('messages.action')</th>
+<<<<<<< HEAD
             <th>@lang('sale.product')</th>
             <th>@lang('purchase.business_location') @show_tooltip(__('lang_v1.product_business_location_tooltip'))</th>
+=======
+            <th>@lang('product.sku')</th>
+            <th>@lang('sale.product')</th>
+            <!-- <th>@lang('purchase.business_location') @show_tooltip(__('lang_v1.product_business_location_tooltip'))</th> -->
+            <div style="display: flex; width: 100%; margin-bottom: 10px; margin-left: 50% !important; ">
+                </div>
+
+            
+            <!-- <th>Unit List Ex</th>
+            <th>List Discount</th> -->
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
             @can('view_purchase_price')
                 @php 
                     $colspan++;
                 @endphp
                 <th>@lang('lang_v1.unit_perchase_price')</th>
             @endcan
+<<<<<<< HEAD
+=======
+            
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
             @can('access_default_selling_price')
                 @php 
                     $colspan++;
@@ -27,17 +44,28 @@
             <th>@lang('product.category')</th>
             <th>@lang('product.brand')</th>
             <th>@lang('product.tax')</th>
+<<<<<<< HEAD
             <th>@lang('product.sku')</th>
             <th>{{ $custom_labels['product']['custom_field_1'] ?? __('lang_v1.product_custom_field1') }}</th>
             <th>{{ $custom_labels['product']['custom_field_2'] ?? __('lang_v1.product_custom_field2') }}</th>
             <th>{{ $custom_labels['product']['custom_field_3'] ?? __('lang_v1.product_custom_field3') }}</th>
             <th>{{ $custom_labels['product']['custom_field_4'] ?? __('lang_v1.product_custom_field4') }}</th>
+=======
+            <!-- <th>{{ $custom_labels['product']['custom_field_1'] ?? __('lang_v1.product_custom_field1') }}</th>
+            <th>{{ $custom_labels['product']['custom_field_2'] ?? __('lang_v1.product_custom_field2') }}</th>
+            <th>{{ $custom_labels['product']['custom_field_3'] ?? __('lang_v1.product_custom_field3') }}</th>
+            <th>{{ $custom_labels['product']['custom_field_4'] ?? __('lang_v1.product_custom_field4') }}</th> -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
         </tr>
     </thead>
     <tfoot>
         <tr>
+<<<<<<< HEAD
             <td colspan="{{$colspan}}">
             <div style="display: flex; width: 100%;">
+=======
+            <div style="display: flex; width: 100%; margin-left: 29%; margin-bottom: 10px;">
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                 @can('product.delete')
                     {!! Form::open(['url' => action([\App\Http\Controllers\ProductController::class, 'massDestroy']), 'method' => 'post', 'id' => 'mass_delete_form' ]) !!}
                     {!! Form::hidden('selected_rows', null, ['id' => 'selected_rows']); !!}

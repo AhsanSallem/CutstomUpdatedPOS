@@ -34,7 +34,11 @@
                     <a href="#" class="list-group-item text-center">@lang('lang_v1.email_settings')</a>
                     <a href="#" class="list-group-item text-center">@lang('lang_v1.sms_settings')</a>
                     <a href="#" class="list-group-item text-center">@lang('lang_v1.reward_point_settings')</a>
+<<<<<<< HEAD
                     <!-- <a href="#" class="list-group-item text-center">@lang('lang_v1.modules')</a> -->
+=======
+                    <a href="#" class="list-group-item text-center">@lang('lang_v1.modules')</a>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                     <!-- <a href="#" class="list-group-item text-center">@lang('lang_v1.custom_labels')</a> -->
                 </div>
             </div>
@@ -78,7 +82,11 @@
                 @include('business.partials.settings_reward_point')
                 <!-- tab 11 end -->
                 <!-- tab 12 start -->
+<<<<<<< HEAD
                 <!-- @include('business.partials.settings_modules') -->
+=======
+                @include('business.partials.settings_modules')
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                 <!-- tab 12 end -->
                 <!-- @include('business.partials.settings_custom_labels') -->
             </div>

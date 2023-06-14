@@ -13,6 +13,11 @@
 					</div>
 					<div class="col-md-9">
 						<div class="row">
+<<<<<<< HEAD
+=======
+
+						
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 							<div id="payment_rows_div">
 								@foreach($payment_lines as $payment_line)
 									
@@ -29,11 +34,27 @@
 							</div>
 							<input type="hidden" id="payment_row_index" value="{{count($payment_lines)}}">
 						</div>
+<<<<<<< HEAD
 						<div class="row">
 							<div class="col-md-12">
 								<button type="button" class="btn btn-primary btn-block" id="add-payment-row">@lang('sale.add_payment_row')</button>
 							</div>
 						</div>
+=======
+
+
+
+
+
+
+
+						
+						<!-- <div class="row">
+							<div class="col-md-12">
+								<button type="button" class="btn btn-primary btn-block" id="add-payment-row">@lang('sale.add_payment_row')</button>
+							</div>
+						</div> -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 						<br>
 						<div class="row @if($change_return['amount'] == 0) hide @endif payment_row" id="change_return_payment_data">
 							<div class="col-md-12">
@@ -81,13 +102,21 @@
 							<div class="col-md-6">
 								<div class="form-group">
 									{!! Form::label('sale_note', __('sale.sell_note') . ':') !!}
+<<<<<<< HEAD
 									{!! Form::textarea('sale_note', !empty($transaction)? $transaction->additional_notes:null, ['class' => 'form-control', 'rows' => 3, 'placeholder' => __('sale.sell_note')]); !!}
+=======
+									{!! Form::text('sale_note', !empty($transaction)? $transaction->additional_notes:null, ['class' => 'form-control', 'rows' => 3, 'placeholder' => __('sale.sell_note')]); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 									{!! Form::label('staff_note', __('sale.staff_note') . ':') !!}
+<<<<<<< HEAD
 									{!! Form::textarea('staff_note', 
+=======
+									{!! Form::text('staff_note', 
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 									!empty($transaction)? $transaction->staff_note:null, ['class' => 'form-control', 'rows' => 3, 'placeholder' => __('sale.staff_note')]); !!}
 								</div>
 							</div>

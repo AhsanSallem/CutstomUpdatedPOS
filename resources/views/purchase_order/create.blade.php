@@ -232,13 +232,21 @@
 		<div class="col-md-4">
 			<div class="form-group">
 	            {!! Form::label('shipping_details', __('sale.shipping_details')) !!}
+<<<<<<< HEAD
 	            {!! Form::textarea('shipping_details',null, ['class' => 'form-control','placeholder' => __('sale.shipping_details') ,'rows' => '3', 'cols'=>'30']); !!}
+=======
+	            {!! Form::text('shipping_details',null, ['class' => 'form-control','placeholder' => __('sale.shipping_details') ,'rows' => '3', 'cols'=>'30']); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 	        </div>
 		</div>
 		<div class="col-md-4">
 			<div class="form-group">
 	            {!! Form::label('shipping_address', __('lang_v1.shipping_address')) !!}
+<<<<<<< HEAD
 	            {!! Form::textarea('shipping_address',null, ['class' => 'form-control','placeholder' => __('lang_v1.shipping_address') ,'rows' => '3', 'cols'=>'30']); !!}
+=======
+	            {!! Form::text('shipping_address',null, ['class' => 'form-control','placeholder' => __('lang_v1.shipping_address') ,'rows' => '3', 'cols'=>'30']); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 	        </div>
 		</div>
 		<div class="col-md-4">
@@ -480,7 +488,11 @@
 					<td colspan="4">
 						<div class="form-group">
 							{!! Form::label('additional_notes',__('purchase.additional_notes')) !!}
+<<<<<<< HEAD
 							{!! Form::textarea('additional_notes', null, ['class' => 'form-control', 'rows' => 3]); !!}
+=======
+							{!! Form::text('additional_notes', null, ['class' => 'form-control', 'rows' => 3]); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 						</div>
 					</td>
 				</tr>

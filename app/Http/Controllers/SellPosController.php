@@ -304,6 +304,13 @@ class SellPosController extends Controller
      */
     public function store(Request $request)
     {
+<<<<<<< HEAD
+=======
+        
+
+     
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
         if (! auth()->user()->can('sell.create') && ! auth()->user()->can('direct_sell.access') && ! auth()->user()->can('so.create')) {
             abort(403, 'Unauthorized action.');
         }
@@ -312,6 +319,10 @@ class SellPosController extends Controller
         if (! empty($request->input('is_direct_sale'))) {
             $is_direct_sale = true;
         }
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
         //Check if there is a open register, if no then redirect to Create Register screen.
         if (! $is_direct_sale && $this->cashRegisterUtil->countOpenedRegister() == 0) {
@@ -368,8 +379,17 @@ class SellPosController extends Controller
 
                 $user_id = $request->session()->get('user.id');
 
+<<<<<<< HEAD
                 $discount = ['discount_type' => $input['discount_type'],
                     'discount_amount' => $input['discount_amount'],
+=======
+         
+                
+                $discount = ['discount_type' => $input['discount_type'],
+                    'discount_amount' => $input['discount_amount'],
+
+             
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                 ];
                 $invoice_total = $this->productUtil->calculateInvoiceTotal($input['products'], $input['tax_rate_id'], $discount);
 
@@ -377,6 +397,11 @@ class SellPosController extends Controller
 
                 if (empty($request->input('transaction_date'))) {
                     $input['transaction_date'] = \Carbon::now();
+<<<<<<< HEAD
+=======
+
+               
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                 } else {
                     $input['transaction_date'] = $this->productUtil->uf_date($request->input('transaction_date'), true);
                 }
@@ -386,6 +411,13 @@ class SellPosController extends Controller
 
                 //Set commission agent
                 $input['commission_agent'] = ! empty($request->input('commission_agent')) ? $request->input('commission_agent') : null;
+<<<<<<< HEAD
+=======
+                $input['ref_no'] = ! empty($request->input('order_point')) ? $request->input('order_point') : null;
+
+
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                 $commsn_agnt_setting = $request->session()->get('business.sales_cmsn_agnt');
                 if ($commsn_agnt_setting == 'logged_in_user') {
                     $input['commission_agent'] = $user_id;
@@ -422,6 +454,14 @@ class SellPosController extends Controller
                     $input['invoice_scheme_id'] = $request->input('invoice_scheme_id');
                 }
 
+<<<<<<< HEAD
+=======
+
+        
+
+
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                 //Types of service
                 if ($this->moduleUtil->isModuleEnabled('types_of_service')) {
                     $input['types_of_service_id'] = $request->input('types_of_service_id');

@@ -82,6 +82,14 @@
 			<img style="width: 100%;margin-bottom: 10px;" src="{{$receipt_details->letter_head}}">
 		</div>
 	@endif
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 	<div class="col-xs-12 text-center">
 		<!-- Invoice  number, Date  -->
 		<p style="width: 100% !important" class="word-wrap">
@@ -89,8 +97,29 @@
 				@if(!empty($receipt_details->invoice_no_prefix))
 					<b>{!! $receipt_details->invoice_no_prefix !!}</b>
 				@endif
+<<<<<<< HEAD
 				{{$receipt_details->invoice_no}}
 
+=======
+				
+				
+				{{$receipt_details->invoice_no}}
+
+				<br>
+				<strong>Order Point No: </strong> {{$receipt_details->ref_no}}
+				<br>
+				<strong>Job No: </strong> {{$receipt_details->job_no}}
+				<br>
+				<strong>Job Ref: </strong> {{$receipt_details->job_ref}}
+				<br>
+
+				<strong>Purchase Ref No: </strong> {{$receipt_details->pur_ref_no}}
+
+
+				
+
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 				@if(!empty($receipt_details->types_of_service))
 					<br/>
 					<span class="pull-left text-left">
@@ -242,6 +271,23 @@
 			</span>
 		</p>
 	</div>
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 </div>
 
 <div class="row" style="color: #000000 !important;">

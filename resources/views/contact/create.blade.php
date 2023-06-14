@@ -253,7 +253,11 @@
 
 
             <!-- User in create customer & supplier -->
+<<<<<<< HEAD
             @if(config('constants.enable_contact_assign') && $type !== 'lead')
+=======
+            <!-- @if(config('constants.enable_contact_assign') && $type !== 'lead')
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                 <div class="col-md-6">
                       <div class="form-group">
                           {!! Form::label('assigned_to_users', __('lang_v1.assigned_to') . ':' ) !!}
@@ -265,7 +269,11 @@
                           </div>
                       </div>
                 </div>
+<<<<<<< HEAD
             @endif
+=======
+            @endif -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
 
 
@@ -319,7 +327,11 @@
                     </div>
                 </div>
 
+<<<<<<< HEAD
                 <div class="col-md-4 opening_balance">
+=======
+                <!-- <div class="col-md-4 opening_balance">
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                   <div class="form-group">
                       {!! Form::label('opening_balance', __('lang_v1.opening_balance') . ':') !!}
                       <div class="input-group">
@@ -329,16 +341,29 @@
                           {!! Form::text('opening_balance', 0, ['class' => 'form-control input_number']); !!}
                       </div>
                   </div>
+<<<<<<< HEAD
                 </div>
+=======
+                </div> -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
                 <div class="col-md-4 pay_term">
                   <div class="form-group">
                     <div class="multi-input">
                       {!! Form::label('pay_term_number', __('contact.pay_term') . ':') !!} @show_tooltip(__('tooltip.pay_term'))
                       <br/>
+<<<<<<< HEAD
                       {!! Form::number('pay_term_number', null, ['class' => 'form-control width-40 pull-left', 'placeholder' => __('contact.pay_term')]); !!}
 
                       {!! Form::select('pay_term_type', ['months' => __('lang_v1.months'), 'days' => __('lang_v1.days')], '', ['class' => 'form-control width-60 pull-left','placeholder' => __('messages.please_select')]); !!}
+=======
+
+
+
+                      {!! Form::number('pay_term_number', 30, ['class' => 'form-control width-40 pull-left', 'placeholder' => __('contact.pay_term')]); !!}
+
+                      {!! Form::select('pay_term_type', [ 'days' => __('lang_v1.days')], '', ['class' => 'form-control width-60 pull-left']); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                     </div>
                   </div>
                 </div>

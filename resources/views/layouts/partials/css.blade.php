@@ -72,6 +72,13 @@
 	.btn-pill{
   border-radius: 100vh;
 }
+<<<<<<< HEAD
+=======
+.submenu li a:hover {
+  background-color: #e1e3e9;
+  color: #333;
+}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 </style>
 @if(!empty($__system_settings['additional_css']))
     {!! $__system_settings['additional_css'] !!}

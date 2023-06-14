@@ -24,9 +24,14 @@
 
     @component('components.widget', ['class' => 'box-primary'])
         <div class="row">
+<<<<<<< HEAD
           
 
             <div class="col-sm-4">
+=======
+
+          <div class="col-sm-4">
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
               <div class="form-group">
                 {!! Form::label('sku', __('product.sku')  . ':*') !!} @show_tooltip(__('tooltip.sku'))
                 {!! Form::text('sku', $product->sku, ['class' => 'form-control',
@@ -34,6 +39,10 @@
               </div>
             </div>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
             <div class="col-sm-4">
               <div class="form-group">
                 {!! Form::label('name', __('product.product_name') . ':*') !!}
@@ -42,6 +51,7 @@
               </div>
             </div>
 
+<<<<<<< HEAD
 
 
             <!-- <div class="col-sm-4">
@@ -56,6 +66,17 @@
 
 
              <div class="col-sm-4">
+=======
+            
+
+                {!! Form::hidden('barcode_type', $product->barcode_type, ['class' => 'form-control',
+                'placeholder' => __('product.sku'), 'required']); !!}
+
+
+            <!-- <div class="clearfix"></div> -->
+            
+            <div class="col-sm-4">
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
               <div class="form-group">
                 {!! Form::label('unit_id', __('product.unit') . ':*') !!}
                 <div class="input-group">
@@ -67,7 +88,12 @@
               </div>
             </div>
 
+<<<<<<< HEAD
              <div class="col-sm-4">
+=======
+
+            <div class="col-sm-4">
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
           <div class="form-group">
             {!! Form::label('supplier_name', __('product.supplier_name') . ':*') !!}
              <select  class="form-control" name='supplier_id' required id="">
@@ -80,6 +106,10 @@
         </div>
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
         <div class="col-sm-4">
               <div class="form-group">
                 {!! Form::label('range', __('product.range') ) !!}
@@ -90,9 +120,12 @@
 
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
             <div class="col-sm-4 @if(!session('business.enable_sub_units')) hide @endif">
               <div class="form-group">
                 {!! Form::label('sub_unit_ids', __('lang_v1.related_sub_units') . ':') !!} @show_tooltip(__('lang_v1.sub_units_tooltip'))
@@ -134,11 +167,16 @@
               </div>
             </div>
 
+<<<<<<< HEAD
             <!-- <div class="col-sm-4 @if(!(session('business.enable_category') && session('business.enable_sub_category'))) hide @endif">
+=======
+            <div class="col-sm-4 @if(!(session('business.enable_category') && session('business.enable_sub_category'))) hide @endif">
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
               <div class="form-group">
                 {!! Form::label('sub_category_id', __('product.sub_category')  . ':') !!}
                   {!! Form::select('sub_category_id', $sub_categories, $product->sub_category_id, ['placeholder' => __('messages.please_select'), 'class' => 'form-control select2']); !!}
               </div>
+<<<<<<< HEAD
             </div> -->
 
             <!-- <div class="col-sm-4">
@@ -147,6 +185,18 @@
                   {!! Form::select('product_locations[]', $business_locations, $product->product_locations->pluck('id'), ['class' => 'form-control select2', 'multiple', 'id' => 'product_locations']); !!}
               </div>
             </div> -->
+=======
+            </div>
+
+            <div class="col-sm-4">
+              <div class="form-group">
+                <!-- {!! Form::label('product_locations', __('business.business_locations') . ':') !!} @show_tooltip(__('lang_v1.product_location_help')) -->
+                <input type="hidden" name="product_locations" value="{{$business_locations}}">
+
+                  <!-- {!! Form::select('product_locations[]', $business_locations, $product->product_locations->pluck('id'), ['class' => 'form-control select2', 'multiple', 'id' => 'product_locations']); !!} -->
+              </div>
+            </div>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
             <div class="clearfix"></div>
             
@@ -196,6 +246,7 @@
               </div>
             </div>
             </div>
+<<<<<<< HEAD
             <div class="col-sm-4">
               <div class="form-group">
                 {!! Form::label('product_brochure', __('lang_v1.product_brochure') . ':') !!}
@@ -216,12 +267,35 @@
     @component('components.widget', ['class' => 'box-primary'])
         <div class="row">
             <!-- <div class="col-sm-4 @if(!session('business.enable_price_tax')) hide @endif">
+=======
+            <!--<div class="col-sm-4">-->
+            <!--  <div class="form-group">-->
+            <!--    {!! Form::label('product_brochure', __('lang_v1.product_brochure') . ':') !!}-->
+            <!--    {!! Form::file('product_brochure', ['id' => 'product_brochure', 'accept' => implode(',', array_keys(config('constants.document_upload_mimes_types')))]); !!}-->
+            <!--    <small>-->
+            <!--        <p class="help-block">-->
+            <!--            @lang('lang_v1.previous_file_will_be_replaced')<br>-->
+            <!--            @lang('purchase.max_file_size', ['size' => (config('constants.document_size_limit') / 1000000)])-->
+            <!--            @includeIf('components.document_help_text')-->
+            <!--        </p>-->
+            <!--    </small>-->
+            <!--  </div>-->
+            <!--</div>-->
+    @endcomponent
+
+  
+
+    @component('components.widget', ['class' => 'box-primary'])
+        <div class="row">
+            <div class="col-sm-4 @if(!session('business.enable_price_tax')) hide @endif">
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
               <div class="form-group">
                 {!! Form::label('tax', __('product.applicable_tax') . ':') !!}
                   {!! Form::select('tax', $taxes, $product->tax, ['placeholder' => __('messages.please_select'), 'class' => 'form-control select2'], $tax_attributes); !!}
               </div>
             </div>
 
+<<<<<<< HEAD
             <div class="col-sm-4 @if(!session('business.enable_price_tax')) hide @endif">
               <div class="form-group">
                 {!! Form::label('tax_type', __('product.selling_price_tax_type') . ':*') !!}
@@ -229,6 +303,23 @@
                   ['class' => 'form-control select2', 'required']); !!}
               </div>
             </div> -->
+=======
+
+
+
+            <div class="col-sm-4 @if(!session('business.enable_price_tax')) hide @endif">
+              <div class="form-group">
+                <!-- {!! Form::label('tax_type', __('product.selling_price_tax_type') . ':*') !!} -->
+                <input type="hidden" value="$product->tax_type" name="tax_type">
+
+
+
+              </div>
+            </div>
+
+
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
             <div class="clearfix"></div>
             <div class="col-sm-4">

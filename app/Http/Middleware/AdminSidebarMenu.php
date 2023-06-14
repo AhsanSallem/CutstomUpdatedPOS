@@ -135,6 +135,7 @@ class AdminSidebarMenu
                                 ['icon' => 'fa fas fa-barcode', 'active' => request()->segment(1) == 'labels' && request()->segment(2) == 'show']
                             );
                         }
+<<<<<<< HEAD
                         // if (auth()->user()->can('product.create')) {
                         //     $sub->url(
                         //         action([\App\Http\Controllers\VariationTemplateController::class, 'index']),
@@ -147,6 +148,20 @@ class AdminSidebarMenu
                         //         ['icon' => 'fa fas fa-download', 'active' => request()->segment(1) == 'import-products']
                         //     );
                         // }
+=======
+                        if (auth()->user()->can('product.create')) {
+                            $sub->url(
+                                action([\App\Http\Controllers\VariationTemplateController::class, 'index']),
+                                __('product.variations'),
+                                ['icon' => 'fa fas fa-circle', 'active' => request()->segment(1) == 'variation-templates']
+                            );
+                            $sub->url(
+                                action([\App\Http\Controllers\ImportProductsController::class, 'index']),
+                                __('product.import_products'),
+                                ['icon' => 'fa fas fa-download', 'active' => request()->segment(1) == 'import-products']
+                            );
+                        }
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         if (auth()->user()->can('product.opening_stock')) {
                             $sub->url(
                                 action([\App\Http\Controllers\ImportOpeningStockController::class, 'index']),
@@ -175,6 +190,16 @@ class AdminSidebarMenu
                                 ['icon' => 'fa fas fa-tags', 'active' => request()->segment(1) == 'taxonomies' && request()->get('type') == 'product']
                             );
                         }
+<<<<<<< HEAD
+=======
+                        if (auth()->user()->can('catalog.view') || auth()->user()->can('catalog.create')) {
+                            $sub->url(
+                                action([\App\Http\Controllers\CatalogController::class, 'index']).'?type=product',
+                                __('Catalog'),
+                                ['icon' => 'fa fas fa-tags', 'active' => request()->segment(1) == 'caltalogs' && request()->get('type') == 'product']
+                            );
+                        }
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         if (auth()->user()->can('brand.view') || auth()->user()->can('brand.create')) {
                             $sub->url(
                                 action([\App\Http\Controllers\BrandController::class, 'index']),
@@ -251,6 +276,7 @@ class AdminSidebarMenu
                             );
                         }
 
+<<<<<<< HEAD
                         if ($is_admin || auth()->user()->hasAnyPermission(['sell.view', 'sell.create', 'direct_sell.access', 'direct_sell.view', 'view_own_sell_only', 'view_commission_agent_sell', 'access_shipping', 'access_own_shipping', 'access_commission_agent_shipping'])) {
                             $sub->url(
                                 action([\App\Http\Controllers\SellController::class, 'index']),
@@ -265,6 +291,22 @@ class AdminSidebarMenu
                                 ['icon' => 'fa fas fa-plus-circle', 'active' => request()->segment(1) == 'sells' && request()->segment(2) == 'create' && empty(request()->get('status'))]
                             );
                         }
+=======
+                        // if ($is_admin || auth()->user()->hasAnyPermission(['sell.view', 'sell.create', 'direct_sell.access', 'direct_sell.view', 'view_own_sell_only', 'view_commission_agent_sell', 'access_shipping', 'access_own_shipping', 'access_commission_agent_shipping'])) {
+                        //     $sub->url(
+                        //         action([\App\Http\Controllers\SellController::class, 'index']),
+                        //         __('lang_v1.all_sales'),
+                        //         ['icon' => 'fa fas fa-list', 'active' => request()->segment(1) == 'sells' && request()->segment(2) == null]
+                        //     );
+                        // }
+                        // if (in_array('add_sale', $enabled_modules) && auth()->user()->can('direct_sell.access')) {
+                        //     $sub->url(
+                        //         action([\App\Http\Controllers\SellController::class, 'create']),
+                        //         __('sale.add_sale'),
+                        //         ['icon' => 'fa fas fa-plus-circle', 'active' => request()->segment(1) == 'sells' && request()->segment(2) == 'create' && empty(request()->get('status'))]
+                        //     );
+                        // }
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         if (auth()->user()->can('sell.create')) {
                             if (in_array('pos_sale', $enabled_modules)) {
                                 if (auth()->user()->can('sell.view')) {
@@ -505,6 +547,7 @@ class AdminSidebarMenu
                             );
                         }
 
+<<<<<<< HEAD
                         if (auth()->user()->can('tax_report.view')) {
                             $sub->url(
                                 action([\App\Http\Controllers\ReportController::class, 'getTaxReport']),
@@ -512,6 +555,15 @@ class AdminSidebarMenu
                                 ['icon' => 'fa fas fa-percent', 'active' => request()->segment(2) == 'tax-report']
                             );
                         }
+=======
+                        // if (auth()->user()->can('tax_report.view')) {
+                        //     $sub->url(
+                        //         action([\App\Http\Controllers\ReportController::class, 'getTaxReport']),
+                        //         __('report.tax_report'),
+                        //         ['icon' => 'fa fas fa-percent', 'active' => request()->segment(2) == 'tax-report']
+                        //     );
+                        // }
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         if (auth()->user()->can('contacts_report.view')) {
                             $sub->url(
                                 action([\App\Http\Controllers\ReportController::class, 'getCustomerSuppliers']),
@@ -600,6 +652,7 @@ class AdminSidebarMenu
                                 ['icon' => 'fa fas fa-search-minus', 'active' => request()->segment(2) == 'expense-report']
                             );
                         }
+<<<<<<< HEAD
                         if (auth()->user()->can('register_report.view')) {
                             $sub->url(
                                 action([\App\Http\Controllers\ReportController::class, 'getRegisterReport']),
@@ -607,6 +660,15 @@ class AdminSidebarMenu
                                 ['icon' => 'fa fas fa-briefcase', 'active' => request()->segment(2) == 'register-report']
                             );
                         }
+=======
+                        // if (auth()->user()->can('register_report.view')) {
+                        //     $sub->url(
+                        //         action([\App\Http\Controllers\ReportController::class, 'getRegisterReport']),
+                        //         __('report.register_report'),
+                        //         ['icon' => 'fa fas fa-briefcase', 'active' => request()->segment(2) == 'register-report']
+                        //     );
+                        // }
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         if (auth()->user()->can('sales_representative.view')) {
                             $sub->url(
                                 action([\App\Http\Controllers\ReportController::class, 'getSalesRepresentativeReport']),
@@ -682,9 +744,15 @@ class AdminSidebarMenu
             }
 
             //Notification template menu
+<<<<<<< HEAD
             if (auth()->user()->can('send_notifications')) {
                 $menu->url(action([\App\Http\Controllers\NotificationTemplateController::class, 'index']), __('lang_v1.notification_templates'), ['icon' => 'fa fas fa-envelope', 'active' => request()->segment(1) == 'notification-templates'])->order(80);
             }
+=======
+            // if (auth()->user()->can('send_notifications')) {
+            //     $menu->url(action([\App\Http\Controllers\NotificationTemplateController::class, 'index']), __('lang_v1.notification_templates'), ['icon' => 'fa fas fa-envelope', 'active' => request()->segment(1) == 'notification-templates'])->order(80);
+            // }
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
             //Settings Dropdown
             if (auth()->user()->can('business_settings.access') ||

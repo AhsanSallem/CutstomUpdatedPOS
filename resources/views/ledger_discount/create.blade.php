@@ -27,7 +27,11 @@
                 @endif
                 <div class="form-group">
                     {!! Form::label('note', __( 'brand.note' ) . ':') !!}
+<<<<<<< HEAD
                       {!! Form::textarea('note', null, ['class' => 'form-control', 'placeholder' => __( 'brand.note'), 'rows' => 3 ]); !!}
+=======
+                      {!! Form::text('note', null, ['class' => 'form-control', 'placeholder' => __( 'brand.note'), 'rows' => 3 ]); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                 </div>
             </div>
             <div class="modal-footer">

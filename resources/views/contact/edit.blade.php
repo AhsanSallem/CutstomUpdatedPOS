@@ -81,7 +81,11 @@
           </div>
         </div>
 
+<<<<<<< HEAD
 <!-- 
+=======
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
         <div class="col-md-4 customer_fields">
           <div class="form-group">
               {!! Form::label('customer_group_id', __('lang_v1.customer_group') . ':') !!}
@@ -92,7 +96,11 @@
                   {!! Form::select('customer_group_id', $customer_groups, $contact->customer_group_id, ['class' => 'form-control']); !!}
               </div>
           </div>
+<<<<<<< HEAD
         </div> -->
+=======
+        </div>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
 
         <div class="clearfix customer_fields"></div>
@@ -263,7 +271,11 @@
           </div>
         </div>
 
+<<<<<<< HEAD
         @if(config('constants.enable_contact_assign') && $contact->type !== 'lead')
+=======
+        <!-- @if(config('constants.enable_contact_assign') && $contact->type !== 'lead')
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
           <div class="col-md-6">
                 <div class="form-group">
                     {!! Form::label('assigned_to_users', __('lang_v1.assigned_to') . ':' ) !!}
@@ -275,7 +287,11 @@
                     </div>
                 </div>
           </div>
+<<<<<<< HEAD
         @endif
+=======
+        @endif -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
         <div class="col-md-12">
             <button type="button" class="btn btn-primary center-block more_btn" data-target="#more_div">@lang('lang_v1.more_info') <i class="fa fa-chevron-down"></i></button>
@@ -298,7 +314,11 @@
         </div>
 
         
+<<<<<<< HEAD
         <div class="col-md-4 opening_balance">
+=======
+        <!-- <div class="col-md-4 opening_balance">
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
           <div class="form-group">
               {!! Form::label('opening_balance', __('lang_v1.opening_balance') . ':') !!}
               <div class="input-group">
@@ -308,7 +328,11 @@
                   {!! Form::text('opening_balance', $opening_balance, ['class' => 'form-control input_number']); !!}
               </div>
           </div>
+<<<<<<< HEAD
         </div>
+=======
+        </div> -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
         <div class="col-md-4 pay_term">
           <div class="form-group">
@@ -317,7 +341,11 @@
               <br/>
               {!! Form::number('pay_term_number', $contact->pay_term_number, ['class' => 'form-control width-40 pull-left', 'placeholder' => __('contact.pay_term')]); !!}
 
+<<<<<<< HEAD
               {!! Form::select('pay_term_type', ['months' => __('lang_v1.months'), 'days' => __('lang_v1.days')], $contact->pay_term_type, ['class' => 'form-control width-60 pull-left','placeholder' => __('messages.please_select')]); !!}
+=======
+              {!! Form::select('pay_term_type', [ 'days' => __('lang_v1.days')], $contact->pay_term_type, ['class' => 'form-control width-60 pull-left']); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
             </div>
           </div>
         </div>

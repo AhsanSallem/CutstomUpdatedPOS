@@ -51,11 +51,25 @@
 
     @component('components.widget', ['class' => 'box-primary', 'title' => __('purchase.all_purchases')])
         @can('purchase.create')
+<<<<<<< HEAD
             @slot('tool')
                 <div class="box-tools">
                     <a class="btn-pill btn btn-block btn-primary" href="{{action([\App\Http\Controllers\PurchaseController::class, 'create'])}}">
                     <i class="fa fa-plus"></i> @lang('messages.add')</a>
                 </div>
+=======
+
+
+            @slot('tool')
+                <div class="box-tools mx-1">
+
+                    <a class="btn-pill btn btn-block btn-primary" href="{{action([\App\Http\Controllers\PurchaseController::class, 'create'])}}">
+                    <i class="fa fa-plus"></i> @lang('messages.add')</a>
+                </div>
+
+
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
             @endslot
         @endcan
         @include('purchase.partials.purchase_table')
@@ -98,12 +112,21 @@
         purchase_table.ajax.reload();
     });
 
+<<<<<<< HEAD
     $(document).on('click', '.update_status', function(e){
         e.preventDefault();
         $('#update_purchase_status_form').find('#status').val($(this).data('status'));
         $('#update_purchase_status_form').find('#purchase_id').val($(this).data('purchase_id'));
         $('#update_purchase_status_modal').modal('show');
     });
+=======
+    // $(document).on('click', '.update_status', function(e){
+    //     e.preventDefault();
+    //     $('#update_purchase_status_form').find('#status').val($(this).data('status'));
+    //     $('#update_purchase_status_form').find('#purchase_id').val($(this).data('purchase_id'));
+    //     $('#update_purchase_status_modal').modal('show');
+    // });
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
     $(document).on('submit', '#update_purchase_status_form', function(e){
         e.preventDefault();

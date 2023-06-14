@@ -40,7 +40,11 @@ return [
     'address' => 'Address',
     'logo_help' => 'Previous logo (if exists) will be replaced',
     'update_settings' => 'Update Settings',
+<<<<<<< HEAD
     'business_settings' => 'Business Settings',
+=======
+    'business_settings' => 'Branch Settings',
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
     'settings_updated_success' => 'Settings updated successfully',
     'default_profit_percent' => 'Default profit percent',
     'default_sales_tax' => 'Default Sale Tax',
@@ -74,6 +78,7 @@ return [
     'accounting_method' => 'Stock Accounting Method',
     'fifo' => 'FIFO (First In First Out)',
     'lifo' => 'LIFO (Last In First Out)',
+<<<<<<< HEAD
     'business_locations' => 'Business Locations',
     'business_location' => 'Business Location',
     'manage_your_business_locations' => 'Manage your business locations',
@@ -82,6 +87,16 @@ return [
     'business_location_added_success' => 'Business location added successfully',
     'edit_business_location' => 'Edit business location',
     'business_location_updated_success' => 'Business location updated successfully',
+=======
+    'business_locations' => 'Branch',
+    'business_location' => 'Branch',
+    'manage_your_business_locations' => 'Manage your Branch',
+    'all_your_business_locations' => 'All your Branch',
+    'add_business_location' => 'Add a new Branch',
+    'business_location_added_success' => 'Branch added successfully',
+    'edit_business_location' => 'Edit Branch',
+    'business_location_updated_success' => 'Branch updated successfully',
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
     'location' => 'Location',
     'already_registered' => 'Already registered?',
     'sign_in' => 'Sign In',

@@ -108,7 +108,11 @@
                 </div>
             </div>
             <div class="clearfix"></div>
+<<<<<<< HEAD
             <div class="col-md-3">
+=======
+            <!-- <div class="col-md-3">
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                 <h4>@lang( 'role.access_locations' ) @show_tooltip(__('tooltip.access_locations_permission'))</h4>
             </div>
             <div class="col-md-9">
@@ -131,7 +135,11 @@
                     </div>
                 </div>
               @endforeach
+<<<<<<< HEAD
             </div>
+=======
+            </div> -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
         @endcomponent
         </div>
 

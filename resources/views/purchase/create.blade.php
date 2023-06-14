@@ -177,7 +177,11 @@
 			<div class="col-sm-3">
 				<div class="form-group">
 					{!! Form::label('location_id', __('purchase.business_location').':*') !!}
+<<<<<<< HEAD
 					@show_tooltip(__('tooltip.purchase_location'))
+=======
+					<!-- @show_tooltip(__('tooltip.purchase_location')) -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 					{!! Form::select('location_id', $business_locations, $default_location, ['class' => 'form-control select2', 'placeholder' => __('messages.please_select'), 'required'], $bl_attributes); !!}
 				</div>
 			</div>
@@ -207,6 +211,7 @@
 		            <div class="multi-input">
 		              {!! Form::label('pay_term_number', __('contact.pay_term') . ':') !!} @show_tooltip(__('tooltip.pay_term'))
 		              <br/>
+<<<<<<< HEAD
 		              {!! Form::number('pay_term_number', null, ['class' => 'form-control width-40 pull-left', 'placeholder' => __('contact.pay_term')]); !!}
 
 		              {!! Form::select('pay_term_type', 
@@ -214,6 +219,15 @@
 		              		'days' => __('lang_v1.days')], 
 		              		null, 
 		              	['class' => 'form-control width-60 pull-left','placeholder' => __('messages.please_select'), 'id' => 'pay_term_type']); !!}
+=======
+		              {!! Form::number('pay_term_number', 30, ['class' => 'form-control width-40 pull-left', 'placeholder' => __('contact.pay_term')]); !!}
+
+		              {!! Form::select('pay_term_type', 
+		              	[
+		              		'days' => __('lang_v1.days')], 
+		              		null, 
+		              	['class' => 'form-control width-60 pull-left', 'id' => 'pay_term_type']); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 		            </div>
 		        </div>
 		    </div>
@@ -468,7 +482,11 @@
 					<td colspan="4">
 						<div class="form-group">
 							{!! Form::label('additional_notes',__('purchase.additional_notes')) !!}
+<<<<<<< HEAD
 							{!! Form::textarea('additional_notes', null, ['class' => 'form-control', 'rows' => 3]); !!}
+=======
+							{!! Form::text('additional_notes', null, ['class' => 'form-control', 'rows' => 3]); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 						</div>
 					</td>
 				</tr>

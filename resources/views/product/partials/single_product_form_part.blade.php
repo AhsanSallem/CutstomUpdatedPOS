@@ -16,9 +16,15 @@
           <th>@lang('product.default_purchase_price')</th>
           <th>@lang('product.profit_percent') @show_tooltip(__('tooltip.profit_percent'))</th>
           <th>@lang('product.default_selling_price')</th>
+<<<<<<< HEAD
           @if(empty($quick_add))
             <th>@lang('lang_v1.product_image')</th>
           @endif
+=======
+          <!-- @if(empty($quick_add))
+            <th>@lang('lang_v1.product_image')</th>
+          @endif -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
         </tr>
         <tr>
           <td>
@@ -78,7 +84,11 @@
 
 
 
+<<<<<<< HEAD
           @if(empty($quick_add))
+=======
+          <!-- @if(empty($quick_add))
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
           <td>
               <div class="form-group">
                 {!! Form::label('variation_images', __('lang_v1.product_image') . ':') !!}
@@ -87,7 +97,11 @@
                 <small><p class="help-block">@lang('purchase.max_file_size', ['size' => (config('constants.document_size_limit') / 1000000)]) <br> @lang('lang_v1.aspect_ratio_should_be_1_1')</p></small>
               </div>
           </td>
+<<<<<<< HEAD
           @endif
+=======
+          @endif -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
         </tr>
     </table>
 </div>

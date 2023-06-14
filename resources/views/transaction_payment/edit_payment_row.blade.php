@@ -170,7 +170,11 @@
         <div class="col-md-12">
           <div class="form-group">
             {!! Form::label("note", __('lang_v1.payment_note') . ':') !!}
+<<<<<<< HEAD
             {!! Form::textarea("note", $payment_line->note, ['class' => 'form-control', 'rows' => 3]); !!}
+=======
+            {!! Form::text("note", $payment_line->note, ['class' => 'form-control', 'rows' => 3]); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
           </div>
         </div>
       </div>

@@ -33,7 +33,11 @@
         <div class="col-sm-12">
           <div class="form-group">
             {!! Form::label('description', __('barcode.setting_description') ) !!}
+<<<<<<< HEAD
               {!! Form::textarea('description', null, ['class' => 'form-control',
+=======
+              {!! Form::text('description', null, ['class' => 'form-control',
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
               'placeholder' => __('barcode.setting_description'), 'rows' => 3]); !!}
           </div>
         </div>

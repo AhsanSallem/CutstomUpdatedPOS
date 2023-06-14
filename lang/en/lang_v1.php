@@ -117,7 +117,11 @@ return [
     'variation_name' => 'Variation Name',
     'add_variation_values' => 'Add variation values',
     'edit_variation' => 'Edit Variation',
+<<<<<<< HEAD
     'received' => 'Received',
+=======
+    'received' => 'Complete',
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
     'pending' => 'Pending',
     'ordered' => 'Ordered',
     'search_product_placeholder' => 'Enter Product name / SKU / Scan bar code',
@@ -161,7 +165,11 @@ return [
     'port_help' => 'Most printer works on port 9100',
     'combination_of_taxes' => 'Combination of multiple taxes',
     'product_purchase_report' => 'Product Purchase Report',
+<<<<<<< HEAD
     'unit_perchase_price' => 'Unit Purchase Price',
+=======
+    'unit_perchase_price' => 'Unit Cost Ex',
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
     'search_product' => 'Search Product',
     'product_sell_report' => 'Product Sell Report',
     'unit_sale_price' => 'Unit Sale Price',
@@ -239,7 +247,11 @@ return [
     'purchase_price_exc_tax_ins2' => "Purchase Price (Excluding Tax) (Only in numbers)<br><br>For variable products '|' separated values with <br>the same order as Variation Values <br>(Ex: 84|85|88)",
     'profit_margin_ins' => 'Profit Margin (Only in numbers)',
     'profit_margin_ins1' => 'If blank default profit margin for the <br> business will be used',
+<<<<<<< HEAD
     'selling_price' => 'Selling Price',
+=======
+    'selling_price' => 'Unit Sell',
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
     'selling_price_ins' => 'Selling Price (Only in numbers)',
     'selling_price_ins1' => 'If blank selling price will be calculated <br>with the given Purchase Price <br>and Applicable Tax ',
     'opening_stock' => 'Opening Stock',
@@ -326,7 +338,11 @@ return [
     'aspect_ratio_should_be_1_1' => 'Aspect ratio should be 1:1',
     'previous_image_will_be_replaced' => 'Previously uploaded image will be replaced',
     'all_category' => 'All Categories',
+<<<<<<< HEAD
     'all_brands' => 'All Brands',
+=======
+    'all_brands' => 'All Groups',
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
     'backup' => 'Administer Backup',
     'download_complete_backup' => 'Download complete backup',
     'backup_doesnt_exist' => "Backup Doesn't exist",

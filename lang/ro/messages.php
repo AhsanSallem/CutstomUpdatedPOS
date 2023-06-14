@@ -34,7 +34,11 @@ return [
     'no' => 'No',
     'all' => 'All',
     'settings' => 'Settings',
+<<<<<<< HEAD
     'business_location_settings' => 'Business Location Settings',
+=======
+    'business_location_settings' => 'Branch Settings',
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
     'print' => 'Print',
     'submit' => 'Submit',
     'purchase_sell_mismatch_exception' => 'ERROR: NOT ALLOWED: Mismatch between sold and purchase quantity. Product: :product',

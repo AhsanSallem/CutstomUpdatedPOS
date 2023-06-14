@@ -1,7 +1,16 @@
 <div class="modal-header">
     <button type="button" class="close no-print" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     @php
+<<<<<<< HEAD
       $title = $purchase->type == 'purchase_order' ? __('lang_v1.purchase_order_details') : __('purchase.purchase_details');
+=======
+      // $title = $purchase->type == 'purchase_order' ? __('lang_v1.purchase_order_details') : __('purchase.purchase_details');
+      if($mainTitle == ""){
+        $title = $purchase->type == 'purchase_order' ? __('lang_v1.purchase_order_details') : __('purchase.purchase_details');
+      }else{
+        $title = $mainTitle;
+      }
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
       $custom_labels = json_decode(session('business.custom_labels'), true);
     @endphp
     <h4 class="modal-title" id="modalTitle"> {{$title}} (<b>@lang('purchase.ref_no'):</b> #{{ $purchase->ref_no }})

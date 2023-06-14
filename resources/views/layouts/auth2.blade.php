@@ -13,6 +13,12 @@
     <title>@yield('title') - {{ config('app.name', 'POS') }}</title> 
 
     @include('layouts.partials.css')
+<<<<<<< HEAD
+=======
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -25,6 +31,7 @@
     @if (session('status') && session('status.success'))
         <input type="hidden" id="status_span" data-status="{{ session('status.success') }}" data-msg="{{ session('status.msg') }}">
     @endif
+<<<<<<< HEAD
     <div class="container-fluid">
         <div class="row eq-height-row">
             <div class="col-md-5 col-sm-5 hidden-xs left-col eq-height-col" >
@@ -81,6 +88,12 @@
             </div>
         </div>
     </div>
+=======
+           
+           
+                @yield('content')
+          
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
     
     @include('layouts.partials.javascripts')

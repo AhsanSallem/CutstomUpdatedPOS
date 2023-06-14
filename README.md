@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ## About Ultimate POS
+=======
+## About  POS
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
 Ultimate POS is a POS application by [Ultimate Fosters](http://ultimatefosters.com), a brand of [The Web Fosters](http://thewebfosters.com).
 
@@ -16,3 +20,9 @@ The Ultimate POS software is licensed under the [Codecanyon license](https://cod
 # ahmadPOS
 "# ahmadPOS" 
 "# customPOS" 
+<<<<<<< HEAD
+=======
+"# CutstomUpdatedPOS" 
+"# CutstomUpdatedPOS" 
+"# CutstomUpdatedPOS" 
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd

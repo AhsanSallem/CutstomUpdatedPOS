@@ -192,13 +192,21 @@ a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, 
         
         @if($request->segment(1) == 'pos')
           @can('view_cash_register')
+<<<<<<< HEAD
           <button type="button" id="register_details" title="{{ __('cash_register.register_details') }}" data-toggle="tooltip" data-placement="bottom" class="btn btn-success btn-flat pull-left m-8 btn-sm mt-10 btn-modal" data-container=".register_details_modal" 
+=======
+          <button type="button" id="register_details" title="{{ __('cash_register.register_details') }}" data-toggle="tooltip" data-placement="bottom" class="btn-pill btn btn-success btn-flat pull-left m-8 btn-sm mt-10 btn-modal" data-container=".register_details_modal" 
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
           data-href="{{ action([\App\Http\Controllers\CashRegisterController::class, 'getRegisterDetails'])}}">
             <strong><i class="fa fa-briefcase fa-lg" aria-hidden="true"></i></strong>
           </button>
           @endcan
           @can('close_cash_register')
+<<<<<<< HEAD
           <button type="button" id="close_register" title="{{ __('cash_register.close_register') }}" data-toggle="tooltip" data-placement="bottom" class="btn btn-danger btn-flat pull-left m-8 btn-sm mt-10 btn-modal" data-container=".close_register_modal" 
+=======
+          <button type="button" id="close_register" title="{{ __('cash_register.close_register') }}" data-toggle="tooltip" data-placement="bottom" class="btn-pill btn btn-danger btn-flat pull-left m-8 btn-sm mt-10 btn-modal" data-container=".close_register_modal" 
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
           data-href="{{ action([\App\Http\Controllers\CashRegisterController::class, 'getCloseRegister'])}}">
             <strong><i class="fa fa-window-close fa-lg"></i></strong>
           </button>

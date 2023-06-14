@@ -50,7 +50,11 @@
             </div>
         </div>
     @endif
+<<<<<<< HEAD
     <div class="col-md-3">
+=======
+    <!-- <div class="col-md-3">
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
         <div class="form-group">
             <label>
                 {!! Form::checkbox('has_advance_balance', 1, false, ['class' => 'input-icheck', 'id' => 'has_advance_balance']); !!} <strong>@lang('lang_v1.advance_balance')</strong>
@@ -63,7 +67,11 @@
                 {!! Form::checkbox('has_opening_balance', 1, false, ['class' => 'input-icheck', 'id' => 'has_opening_balance']); !!} <strong>@lang('lang_v1.opening_balance')</strong>
             </label>
         </div>
+<<<<<<< HEAD
     </div>
+=======
+    </div> -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
     @if($type == 'customer')
         <div class="col-md-3">
             <div class="form-group">
@@ -121,8 +129,13 @@
                             <!-- <th>Status</th> -->
                             <th>@lang('contact.tax_no')</th>
                             <th>@lang('contact.pay_term')</th>
+<<<<<<< HEAD
                             <th>@lang('account.opening_balance')</th>
                             <th>@lang('lang_v1.advance_balance')</th>
+=======
+                            <!-- <th>@lang('account.opening_balance')</th> -->
+                            <!-- <th>@lang('lang_v1.advance_balance')</th> -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                             <th>@lang('lang_v1.added_on')</th>
                             <th>@lang('business.address')</th>
                             <th>@lang('contact.mobile')</th>
@@ -135,8 +148,13 @@
                             <th>@lang('contact.tax_no')</th>
                             <th>@lang('lang_v1.credit_limit')</th>
                             <th>@lang('contact.pay_term')</th>
+<<<<<<< HEAD
                             <th>@lang('account.opening_balance')</th>
                             <th>@lang('lang_v1.advance_balance')</th>
+=======
+                            <!-- <th>@lang('account.opening_balance')</th> -->
+                            <!-- <th>@lang('lang_v1.advance_balance')</th> -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                             <th>@lang('lang_v1.added_on')</th>
                             @if($reward_enabled)
                                 <th id="rp_col">{{session('business.rp_name')}}</th>
@@ -187,8 +205,13 @@
                         <td></td>
                         <td></td>
                         <td></td>
+<<<<<<< HEAD
                         <td></td>
                         <td></td>
+=======
+                        <!-- <td></td> -->
+                        <!-- <td></td> -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         <td></td>
                         <td
                             @if($type == 'supplier')

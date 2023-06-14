@@ -62,10 +62,17 @@ return [
     'barcode_settings.access' => 'Access barcode settings',
     'invoice_settings.access' => 'Access invoice settings',
 
+<<<<<<< HEAD
     'brand.view' => 'View brand',
     'brand.create' => 'Add brand',
     'brand.update' => 'Edit brand',
     'brand.delete' => 'Delete brand',
+=======
+    'brand.view' => 'View group',
+    'brand.create' => 'Add group',
+    'brand.update' => 'Edit bragroupnd',
+    'brand.delete' => 'Delete group',
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
     'tax_rate.view' => 'View tax rate',
     'tax_rate.create' => 'Add tax rate',
@@ -83,7 +90,11 @@ return [
     'category.delete' => 'Delete category',
     'select_all' => 'Select all',
     'settings' => 'Settings',
+<<<<<<< HEAD
     'brand' => 'Brand',
+=======
+    'brand' => 'Group',
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
     'tax_rate' => 'Tax rate',
     'unit' => 'Unit',
     'access_locations' => 'Access locations',

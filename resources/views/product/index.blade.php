@@ -19,12 +19,20 @@
 <div class="row">
     <div class="col-md-12">
     @component('components.filters', ['title' => __('report.filters')])
+<<<<<<< HEAD
         <div class="col-md-3">
+=======
+        <!-- <div class="col-md-3">
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
             <div class="form-group">
                 {!! Form::label('type', __('product.product_type') . ':') !!}
                 {!! Form::select('type', ['single' => __('lang_v1.single'), 'variable' => __('lang_v1.variable'), 'combo' => __('lang_v1.combo')], null, ['class' => 'form-control select2', 'style' => 'width:100%', 'id' => 'product_list_filter_type', 'placeholder' => __('lang_v1.all')]); !!}
             </div>
+<<<<<<< HEAD
         </div>
+=======
+        </div> -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
         <div class="col-md-3">
             <div class="form-group">
                 {!! Form::label('category_id', __('product.category') . ':') !!}
@@ -50,11 +58,16 @@
                 {!! Form::select('brand_id', $brands, null, ['class' => 'form-control select2', 'style' => 'width:100%', 'id' => 'product_list_filter_brand_id', 'placeholder' => __('lang_v1.all')]); !!}
             </div>
         </div>
+<<<<<<< HEAD
         <div class="col-md-3" id="location_filter">
+=======
+        <!-- <div class="col-md-3" id="location_filter">
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
             <div class="form-group">
                 {!! Form::label('location_id',  __('purchase.business_location') . ':') !!}
                 {!! Form::select('location_id', $business_locations, null, ['class' => 'form-control select2', 'style' => 'width:100%', 'placeholder' => __('lang_v1.all')]); !!}
             </div>
+<<<<<<< HEAD
         </div>
         <div class="col-md-3">
             <br>
@@ -62,6 +75,16 @@
                 {!! Form::select('active_state', ['active' => __('business.is_active'), 'inactive' => __('lang_v1.inactive')], null, ['class' => 'form-control select2', 'style' => 'width:100%', 'id' => 'active_state', 'placeholder' => __('lang_v1.all')]); !!}
             </div>
         </div>
+=======
+        </div> -->
+        <!-- <div class="col-md-3">
+            <div class="form-group">
+            {!! Form::label('status',  __('Status') . ':') !!}
+
+                {!! Form::select('active_state', ['active' => __('business.is_active'), 'inactive' => __('lang_v1.inactive')], null, ['class' => 'form-control select2', 'style' => 'width:100%', 'id' => 'active_state', 'placeholder' => __('lang_v1.all')]); !!}
+            </div>
+        </div> -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
         <!-- include module filter -->
         @if(!empty($pos_module_data))
@@ -72,6 +95,7 @@
             @endforeach
         @endif
 
+<<<<<<< HEAD
         <div class="col-md-3">
           <div class="form-group">
             <br>
@@ -80,6 +104,10 @@
             </label>
           </div>
         </div>
+=======
+    
+        
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
         @if($is_woocommerce)
             <div class="col-md-3">
                 <div class="form-group">
@@ -119,6 +147,17 @@
                             <a class="btn-pill btn btn-primary pull-right" href="{{action([\App\Http\Controllers\ProductController::class, 'create'])}}">
                                         <i class="fa fa-plus"></i> @lang('messages.add')</a>
                             <br><br>
+<<<<<<< HEAD
+=======
+                             
+                        @if(isset($catalog_id))
+                        {!! Form::open(['url' => action([\App\Http\Controllers\ProductController::class, 'updateProductCatalog']), 'method' => 'post', 'id' => 'add-catalog_form' ]) !!}
+                        {!! Form::hidden('selected_rows', null, ['id' => 'selected_rows']); !!}
+                        {!! Form::hidden('catalog_id', $catalog_id, ['id' => 'catalog_id']); !!}
+                        {!! Form::submit(__('Add products to catalog'), array('class' => 'pull-right btn-pill btn btn-primary', 'id' => 'catalog-selected')) !!}
+                        {!! Form::close() !!}
+                        @endif
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         @endcan
                         @include('product.partials.product_list')
                     </div>
@@ -199,8 +238,18 @@
                         { data: 'mass_delete'  },
                         { data: 'image', name: 'products.image'  },
                         { data: 'action', name: 'action'},
+<<<<<<< HEAD
                         { data: 'product', name: 'products.name'  },
                         { data: 'product_locations', name: 'product_locations'  },
+=======
+                        { data: 'sku', name: 'products.sku'},
+                        { data: 'product', name: 'products.name'  },
+                        // { data: 'product_locations', name: 'product_locations'  },
+
+                        // { data: 'default_purchase_price', name: 'products.default_purchase_price'  },
+                        // { data: 'discount', name: 'products.discount'  },
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         @can('view_purchase_price')
                             { data: 'purchase_price', name: 'max_purchase_price', searchable: false},
                         @endcan
@@ -212,11 +261,18 @@
                         { data: 'category', name: 'c1.name'},
                         { data: 'brand', name: 'brands.name'},
                         { data: 'tax', name: 'tax_rates.name', searchable: false},
+<<<<<<< HEAD
                         { data: 'sku', name: 'products.sku'},
                         { data: 'product_custom_field1', name: 'products.product_custom_field1'  },
                         { data: 'product_custom_field2', name: 'products.product_custom_field2'  },
                         { data: 'product_custom_field3', name: 'products.product_custom_field3'  },
                         { data: 'product_custom_field4', name: 'products.product_custom_field4'  }
+=======
+                        // { data: 'product_custom_field1', name: 'products.product_custom_field1'  },
+                        // { data: 'product_custom_field2', name: 'products.product_custom_field2'  },
+                        // { data: 'product_custom_field3', name: 'products.product_custom_field3'  },
+                        // { data: 'product_custom_field4', name: 'products.product_custom_field4'  }
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                         
                     ],
                     createdRow: function( row, data, dataIndex ) {
@@ -315,6 +371,22 @@
                     swal('@lang("lang_v1.no_row_selected")');
                 }    
             });
+<<<<<<< HEAD
+=======
+            $(document).on('click', '#catalog-selected', function(e){
+                e.preventDefault();
+                var selected_rows = getSelectedRows();
+                
+                if(selected_rows.length > 0){
+                    $('input#selected_rows').val(selected_rows);
+                    $('form#add-catalog_form').submit();
+                  
+                } else{
+                    $('input#selected_rows').val('');
+                    swal('@lang("lang_v1.no_row_selected")');
+                }    
+            });
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
             $(document).on('click', '#deactivate-selected', function(e){
                 e.preventDefault();
@@ -491,10 +563,17 @@
                     stock_report_cols.push({ data: 'total_sold', name: 'total_sold', searchable: false });
                     stock_report_cols.push({ data: 'total_transfered', name: 'total_transfered', searchable: false });
                     stock_report_cols.push({ data: 'total_adjusted', name: 'total_adjusted', searchable: false });
+<<<<<<< HEAD
                     stock_report_cols.push({ data: 'product_custom_field1', name: 'p.product_custom_field1'});
                     stock_report_cols.push({ data: 'product_custom_field2', name: 'p.product_custom_field2'});
                     stock_report_cols.push({ data: 'product_custom_field3', name: 'p.product_custom_field3'});
                     stock_report_cols.push({ data: 'product_custom_field4', name: 'p.product_custom_field4'});
+=======
+                    // stock_report_cols.push({ data: 'product_custom_field1', name: 'p.product_custom_field1'});
+                    // stock_report_cols.push({ data: 'product_custom_field2', name: 'p.product_custom_field2'});
+                    // stock_report_cols.push({ data: 'product_custom_field3', name: 'p.product_custom_field3'});
+                    // stock_report_cols.push({ data: 'product_custom_field4', name: 'p.product_custom_field4'});
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
                     if ($('th.current_stock_mfg').length) {
                         stock_report_cols.push({ data: 'total_mfg_stock', name: 'total_mfg_stock', searchable: false });

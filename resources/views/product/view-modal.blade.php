@@ -95,7 +95,11 @@
 	      			</div>
 					
 	      			<div class="col-sm-4 invoice-col">
+<<<<<<< HEAD
 	      				<b>@lang('product.expires_in'): </b>
+=======
+	      				<!-- <b>@lang('product.expires_in'): </b>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 	      				@php
 	  						$expiry_array = ['months'=>__('product.months'), 'days'=>__('product.days'), '' =>__('product.not_applicable') ];
 	  					@endphp
@@ -103,7 +107,11 @@
 							{{$product->expiry_period}} {{$expiry_array[$product->expiry_period_type]}}
 						@else
 							{{$expiry_array['']}}
+<<<<<<< HEAD
 	      				@endif
+=======
+	      				@endif -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 	      				<br>
 						@if($product->weight)
 							<b>@lang('lang_v1.weight'): </b>

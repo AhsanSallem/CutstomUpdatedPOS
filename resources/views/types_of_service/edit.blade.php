@@ -17,7 +17,11 @@
 
       <div class="form-group col-md-12">
         {!! Form::label('description', __( 'lang_v1.description' ) . ':') !!}
+<<<<<<< HEAD
           {!! Form::textarea('description', $type_of_service->description, ['class' => 'form-control', 'placeholder' => __( 'lang_v1.description' ), 'rows' => 3]); !!}
+=======
+          {!! Form::text('description', $type_of_service->description, ['class' => 'form-control', 'placeholder' => __( 'lang_v1.description' ), 'rows' => 3]); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
       </div>
       <div class="form-group col-md-12">
       <table class="table table-slim">

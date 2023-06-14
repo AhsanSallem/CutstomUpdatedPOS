@@ -245,17 +245,28 @@ return [
     'opening_stock_ins' => 'Opening Stock (Only in numbers)',
     'only_applicable_to_single_product' => 'Only applicable to single product',
     'purchase_delete_success' => 'Achizitie stearsa cu succes.',
+<<<<<<< HEAD
     'location_ins' => 'If blank first business location will be used',
     'location_ins1' => 'Name of the business location',
+=======
+    'location_ins' => 'If blank first branch will be used',
+    'location_ins1' => 'Name of the branch',
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
     'expiry_date' => 'Expiry Date',
     'expiry_date_ins' => 'Stock Expiry Date <br><b>Format: mm-dd-yyyy; Ex: 11-25-2018</b>',
     'enable_lot_number' => 'Enable Lot number',
     'tooltip_enable_lot_number' => 'This will enable you to enter Lot number for each purchase line in purchase screen',
     'lot_number' => 'Lot Number',
     'enable_racks' => 'Enable Racks',
+<<<<<<< HEAD
     'tooltip_enable_racks' => 'Enable this to add rack details of a product for different business locations while adding products',
     'rack_details' => 'Rack/Row/Position Details',
     'tooltip_rack_details' => 'Enter details of where the product is kept in the store, for different business locations.',
+=======
+    'tooltip_enable_racks' => 'Enable this to add rack details of a product for different branchs while adding products',
+    'rack_details' => 'Rack/Row/Position Details',
+    'tooltip_rack_details' => 'Enter details of where the product is kept in the store, for different branchs.',
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
     'updated_success' => 'Updated Successfully',
     'added_success' => 'Added Successfully',
     'deleted_success' => 'Deleted Successfully',
@@ -287,9 +298,15 @@ return [
     'row' => 'Row',
     'position' => 'Position',
     'weight' => 'Weight',
+<<<<<<< HEAD
     'rack_help_text' => "Rack details seperated by '|' for different business locations serially.<br/> (Ex: R1|R5|R12) ",
     'row_help_text' => "Row details seperated by '|' for different business locations serially.<br/> (Ex: ROW1|ROW2|ROW3) ",
     'position_help_text' => "Position details seperated by '|' for different business locations serially.<br/> (Ex: POS1|POS2|POS3) ",
+=======
+    'rack_help_text' => "Rack details seperated by '|' for different branchs serially.<br/> (Ex: R1|R5|R12) ",
+    'row_help_text' => "Row details seperated by '|' for different branchs serially.<br/> (Ex: ROW1|ROW2|ROW3) ",
+    'position_help_text' => "Position details seperated by '|' for different branchs serially.<br/> (Ex: POS1|POS2|POS3) ",
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
     'import_opening_stock' => 'Importa stoc initial',
     'tooltip_import_opening_stock' => 'This feature is used to import opening stock of already added products. If the products are not added in the system then it is advisable to use import products for adding product details with opening stock.',
     'design' => 'Design',
@@ -804,7 +821,11 @@ return [
     'show_types_of_service' => 'Show types of service',
     'show_tos_custom_fields' => 'Show types of service custom fields',
     'types_of_service_module_settings' => 'Types of service module settings',
+<<<<<<< HEAD
     'product_business_location_tooltip' => 'Product will be available only in this business locations',
+=======
+    'product_business_location_tooltip' => 'Product will be available only in this branchs',
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
     'product_not_assigned_to_any_location' => 'Product not assigned to any locations',
     'packed' => 'Impachetat',
     'shipped' => 'Transportat',
@@ -860,8 +881,13 @@ return [
     'total_payment' => 'Total Payment',
     'deactivate_location' => 'Deactivate Location',
     'activate_location' => 'Activate Location',
+<<<<<<< HEAD
     'business_location_activated_successfully' => 'Business location activated successfully',
     'business_location_deactivated_successfully' => 'Business location deactivated successfully',
+=======
+    'business_location_activated_successfully' => 'branch activated successfully',
+    'business_location_deactivated_successfully' => 'branch deactivated successfully',
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
     'show_credit_sale_button' => 'Show Credit Sale Button',
     'show_credit_sale_btn_help' => 'If enabled credit sale button will be shown in place of Card button on pos screen',
     'credit_sale' => 'Credit Sale',

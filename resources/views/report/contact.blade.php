@@ -70,7 +70,11 @@
                             <th>@lang('lang_v1.total_purchase_return')</th>
                             <th>@lang('report.total_sell')</th>
                             <th>@lang('lang_v1.total_sell_return')</th>
+<<<<<<< HEAD
                             <th>@lang('lang_v1.opening_balance_due')</th>
+=======
+                            <!-- <th>@lang('lang_v1.opening_balance_due')</th> -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                             <th>@lang('report.total_due') &nbsp;&nbsp;<i class="fa fa-info-circle text-info no-print" data-toggle="tooltip" data-placement="bottom" data-html="true" data-original-title="{{ __('messages.due_tooltip')}}" aria-hidden="true"></i></th>
                         </tr>
                     </thead>
@@ -81,7 +85,11 @@
                             <td><span class="display_currency" id="footer_total_purchase_return" data-currency_symbol ="true"></span></td>
                             <td><span class="display_currency" id="footer_total_sell" data-currency_symbol ="true"></span></td>
                             <td><span class="display_currency" id="footer_total_sell_return" data-currency_symbol ="true"></span></td>
+<<<<<<< HEAD
                             <td><span class="display_currency" id="footer_total_opening_bal_due" data-currency_symbol ="true"></span></td>
+=======
+                            <!-- <td><span class="display_currency" id="footer_total_opening_bal_due" data-currency_symbol ="true"></span></td> -->
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                             <td><span class="display_currency" id="footer_total_due" data-currency_symbol ="true"></span></td>
                         </tr>
                     </tfoot>

@@ -16,7 +16,11 @@
 
       <div class="form-group">
         {!! Form::label('description', __( 'lang_v1.description' ) . ':') !!}
+<<<<<<< HEAD
           {!! Form::textarea('description', $warranty->description, ['class' => 'form-control', 'placeholder' => __( 'lang_v1.description' ), 'rows' => 3 ]); !!}
+=======
+          {!! Form::text('description', $warranty->description, ['class' => 'form-control', 'placeholder' => __( 'lang_v1.description' ), 'rows' => 3 ]); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
       </div>
       <strong>{!! Form::label('duration', __( 'lang_v1.duration' ) . ':') !!}*</strong>
       <div class="form-group">

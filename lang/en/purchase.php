@@ -17,7 +17,11 @@ return [
     'job_no' => 'Job No',
     'job_ref' => 'Job Reference',
     
+<<<<<<< HEAD
     'business_location' => 'Business Location',
+=======
+    'business_location' => 'Branch',
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
     'purchases' => 'Purchases',
     'add_payment' => 'Add payment',
     'edit_payment' => 'Edit payment',

@@ -4,7 +4,11 @@
             <th>@lang('messages.action')</th>
             <th>@lang('messages.date')</th>
             <th>@lang('purchase.ref_no')</th>
+<<<<<<< HEAD
             <th>@lang('purchase.location')</th>
+=======
+        <th>@lang('purchase.location')</th>
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
             <th>@lang('purchase.supplier')</th>
             <th>@lang('purchase.purchase_status')</th>
             <th>@lang('purchase.payment_status')</th>

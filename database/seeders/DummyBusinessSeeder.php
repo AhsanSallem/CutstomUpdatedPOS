@@ -1065,7 +1065,11 @@ class DummyBusinessSeeder extends Seeder
             ['key' => 'default_business_active_status', 'value' => '1'],
             ['key' => 'superadmin_version', 'value' => config('superadmin.module_version')],
             ['key' => 'app_currency_id', 'value' => '2'],
+<<<<<<< HEAD
             ['key' => 'invoice_business_name', 'value' => 'Ultimate POS'],
+=======
+            ['key' => 'invoice_business_name', 'value' => 'Plumb Parts Glassglow'],
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
             ['key' => 'invoice_business_landmark', 'value' => 'Linking Street'],
             ['key' => 'invoice_business_zip', 'value' => '85001'],
             ['key' => 'invoice_business_state', 'value' => 'Arizona'],

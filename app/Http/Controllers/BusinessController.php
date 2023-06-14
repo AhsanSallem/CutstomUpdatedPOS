@@ -446,7 +446,11 @@ class BusinessController extends Controller
             }
             $business_details['pos_settings'] = json_encode($pos_settings);
 
+<<<<<<< HEAD
             $business_details['custom_labels'] = json_encode($business_details['custom_labels']);
+=======
+            // $business_details['custom_labels'] = json_encode($business_details['custom_labels']);
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
             $business_details['common_settings'] = ! empty($request->input('common_settings')) ? $request->input('common_settings') : [];
 

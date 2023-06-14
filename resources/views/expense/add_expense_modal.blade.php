@@ -78,7 +78,11 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         {!! Form::label('expense_additional_notes', __('expense.expense_note') . ':') !!}
+<<<<<<< HEAD
                                 {!! Form::textarea('additional_notes', null, ['class' => 'form-control', 'rows' => 3, 'id' => 'expense_additional_notes']); !!}
+=======
+                                {!! Form::text('additional_notes', null, ['class' => 'form-control', 'rows' => 3, 'id' => 'expense_additional_notes']); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
                     </div>
                 </div>
             </div>

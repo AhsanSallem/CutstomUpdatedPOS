@@ -81,6 +81,75 @@
 			</div>
 		</div>
 	@endif
+<<<<<<< HEAD
+=======
+
+	<div class="clearfix"></div>
+
+<!-- @if(!empty($pos_settings['enable_transaction_date'])) -->
+	<div class="col-md-3 col-sm-6">
+		<div class="form-group">
+			<div class="input-group">
+				<label>Order Point No</lable>
+				<input type="text" name="order_point" value="{{$transaction->ref_no}}" class="form-control">
+			</div>
+		</div>
+	</div>
+<!-- @endif -->
+
+<!-- @if(!empty($pos_settings['enable_transaction_date'])) -->
+<div class="col-md-3 col-sm-6">
+		<div class="form-group">
+			<div class="input-group">
+				<label>Job No</lable>
+				<input type="text" name="job_no" value="{{$transaction->job_no}}" class="form-control">
+			</div>
+		</div>
+	</div>
+<!-- @endif -->
+
+<!-- @if(!empty($pos_settings['enable_transaction_date'])) -->
+<div class="col-md-3 col-sm-6">
+		<div class="form-group">
+			<div class="input-group">
+				<label>Job Reference</lable>
+				<input type="text" name="job_ref" value="{{$transaction->job_ref}}" class="form-control">
+			</div>
+		</div>
+	</div>
+<!-- @endif -->
+
+<!-- @if(!empty($pos_settings['enable_transaction_date'])) -->
+<div class="col-md-3 col-sm-6">
+		<div class="form-group">
+			<div class="input-group">
+				<label>Purchase Reference</lable>
+				<input type="text" name="pur_ref" value="{{$transaction->pur_ref_no}}" class="form-control">
+			</div>
+		</div>
+	</div>
+<!-- @endif -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 	@if(config('constants.enable_sell_in_diff_currency') == true)
 		<div class="col-md-4 col-sm-6">
 			<div class="form-group">

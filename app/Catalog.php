@@ -18,6 +18,7 @@ class Catalog extends Model
     {
         return $this->belongsToMany(Product::class);
     }
+<<<<<<< HEAD
     public static function forDropdown($business_id)
     {
         $all_ct = Catalog::where('business_id', $business_id);
@@ -28,4 +29,6 @@ class Catalog extends Model
 
         return $all_ct;
     }
+=======
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 }

@@ -18,6 +18,10 @@ use App\Http\Controllers\DashboardConfiguratorController;
 use App\Http\Controllers\DiscountController;
 use App\Http\Controllers\DocumentAndNoteController;
 use App\Http\Controllers\ExpenseCategoryController;
+<<<<<<< HEAD
+=======
+use App\Http\Controllers\CatalogController;
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 use App\Http\Controllers\ExpenseController;
 use App\Http\Controllers\GroupTaxController;
 use App\Http\Controllers\HomeController;
@@ -157,6 +161,24 @@ Route::middleware(['setData', 'auth', 'SetSessionData', 'language', 'timezone', 
     Route::resource('variation-templates', VariationTemplateController::class);
 
     Route::get('/products/download-excel', [ProductController::class, 'downloadExcel']);
+<<<<<<< HEAD
+=======
+    // Route::get('/purchase/download-excel', [PurchaseController::class, 'downloadExcel2']);
+
+
+
+
+    Route::resource('catalogs', CatalogController::class);
+    Route::get('catalogs-ajax-index-page', [CatalogController::class, 'getcatalogsIndexPage']);
+    Route::get('catalogs/{id}/download', [CatalogController::class, 'downloadCatalog'])->name('catalogs.download');
+    Route::get('catalogs/{id}/send-WhatsApp', [CatalogController::class, 'sendToWhatsApp'])->name('catalogs.sendToWhatsApp');
+    Route::get('catalogs/{id}/send-Email', [CatalogController::class, 'sendToEmail'])->name('catalogs.sendToEmail');
+    Route::get('catalogs-send', [CatalogController::class, 'send'])->name('catalogs.send');
+    Route::post('submitWhatsapp', [CatalogController::class, 'submitWhatsapp'])->name('submitWhatsapp');
+    Route::get('catalogs-ajax-product-search', [CatalogController::class, 'getcatalogsProductSearch']);
+    Route::get('/catalogs/{id}/download', [CatalogController::class, 'downloadCatalog'])->name('catalogs.download');
+    Route::post('/products/add-catalog', [ProductController::class, 'updateProductCatalog']);
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
     Route::get('/products/stock-history/{id}', [ProductController::class, 'productStockHistory']);
     Route::get('/delete-media/{media_id}', [ProductController::class, 'deleteMedia']);
@@ -492,11 +514,23 @@ Route::middleware(['setData', 'auth', 'SetSessionData', 'language', 'timezone', 
 // Route::middleware(['auth'])->group(function () {
 //     Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 // });
+<<<<<<< HEAD
+=======
+Route::middleware(['auth'])->group(function () {
+    Route::match(['get', 'post'], '/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+    Route::get('/user-logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('user.logout');
+});
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 
 Route::middleware(['setData', 'auth', 'SetSessionData', 'language', 'timezone'])->group(function () {
     Route::get('/load-more-notifications', [HomeController::class, 'loadMoreNotifications']);
     Route::get('/get-total-unread', [HomeController::class, 'getTotalUnreadNotifications']);
+<<<<<<< HEAD
     Route::get('/purchases/print/{id}', [PurchaseController::class, 'printInvoice']);
+=======
+    // Route::get('/purchases/print/{id}', [PurchaseController::class, 'printInvoice']);
+    Route::get('/purchases/print/{id}/{name}', [PurchaseController::class, 'printInvoice']);
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
     Route::get('/purchases/{id}', [PurchaseController::class, 'show']);
     Route::get('/download-purchase-order/{id}/pdf', [PurchaseOrderController::class, 'downloadPdf'])->name('purchaseOrder.downloadPdf');
     Route::get('/sells/{id}', [SellController::class, 'show']);

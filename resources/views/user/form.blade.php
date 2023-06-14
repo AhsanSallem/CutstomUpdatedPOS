@@ -82,11 +82,19 @@
 <div class="clearfix"></div>
 <div class="form-group col-md-6">
     {!! Form::label('permanent_address', __( 'lang_v1.permanent_address') . ':') !!}
+<<<<<<< HEAD
     {!! Form::textarea('permanent_address', !empty($user->permanent_address) ? $user->permanent_address : null, ['class' => 'form-control', 'placeholder' => __( 'lang_v1.permanent_address'), 'rows' => 3 ]); !!}
 </div>
 <div class="form-group col-md-6">
     {!! Form::label('current_address', __( 'lang_v1.current_address') . ':') !!}
     {!! Form::textarea('current_address', !empty($user->current_address) ? $user->current_address : null, ['class' => 'form-control', 'placeholder' => __( 'lang_v1.current_address'), 'rows' => 3 ]); !!}
+=======
+    {!! Form::text('permanent_address', !empty($user->permanent_address) ? $user->permanent_address : null, ['class' => 'form-control', 'placeholder' => __( 'lang_v1.permanent_address'), 'rows' => 3 ]); !!}
+</div>
+<div class="form-group col-md-6">
+    {!! Form::label('current_address', __( 'lang_v1.current_address') . ':') !!}
+    {!! Form::text('current_address', !empty($user->current_address) ? $user->current_address : null, ['class' => 'form-control', 'placeholder' => __( 'lang_v1.current_address'), 'rows' => 3 ]); !!}
+>>>>>>> 057d6f0509a0904381860dc4403b5e03ce995bfd
 </div>
 <div class="col-md-12">
     <hr>
